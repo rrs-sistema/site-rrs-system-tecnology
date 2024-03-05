@@ -1,0 +1,109 @@
+.carousel-fade {
+  height: 57vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(./../assets/home-banner-bg.jpg);
+}
+
+.carousel-fade .carousel-inner .carousel-item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.carousel-fade {
+  position: relative;
+  height: 57vh;
+}
+
+.hero h1 span a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+a {
+  font-family: 'Hind', sans-serif;
+  color: #2196f3;
+}
+
+.hero {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  border: 5px solid #e1c3ec;
+  padding: 40px;
+  z-index: 3;
+  /*color: #c0c0c0;*/
+  color: #e1c3ec;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  color: #e1c3ec;
+  font-weight: 700;
+  width: 600px;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.hero h1 span a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.hero h3 {
+  font-size: 1em;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero button {
+  margin: 10px 0;
+}
+
+.carousel-fade .carousel-inner .carousel-item .hero {
+  opacity: 0;
+  -webkit-transition: 2s all ease-in-out .1s;
+  -moz-transition: 2s all ease-in-out .1s;
+  -ms-transition: 2s all ease-in-out .1s;
+  -o-transition: 2s all ease-in-out .1s;
+  transition: 2s all ease-in-out .1s;
+}
+
+.carousel-fade .carousel-inner .carousel-item.active .hero {
+  opacity: 1;
+  -webkit-transition: 2s all ease-in-out .1s;
+  -moz-transition: 2s all ease-in-out .1s;
+  -ms-transition: 2s all ease-in-out .1s;
+  -o-transition: 2s all ease-in-out .1s;
+  transition: 2s all ease-in-out .1s;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0);
+}
+
+.carousel-fade .carousel-inner .carousel-item {
+  height: 100vh;
+}

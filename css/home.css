@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lavender;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  background-image: url("/assets/nfce-banner.png");
+  background-repeat: repeat;
+  background-position: unset;
+  background-attachment: fixed;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  /*background: #e1c3ec;*/
+  background: white;
+  padding: 20px;
+  position: fixed;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+}
+
+/* Style the list inside the menu */
+nav img {
+  margin-left: 30%;
+  color: transparent;
+}
+
+nav ul {
+  margin: 25%;
+  list-style-type: none;
+  font-size: 14px;
+  padding: 0;
+}
+
+nav ul li {
+  line-height: 1.8;
+  text-align: center;
+}
+
+nav ul li a {
+  /*color: black;*/
+  color: inherit;
+  text-decoration: inherit;
+  /* no underline */
+
+}
+
+nav ul li a:hover {
+  color: hotpink;
+}
+
+nav ul li a:active {
+  color: #f1f1f1;
+}
+
+nav p {
+  margin: 2%;
+  font-size: 14px;
+  color: grey;
+}
+
+nav h2 {
+  margin-left: 18%;
+  font-size: 16px;
+}
+
+article {
+  margin-left: 20.5%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  position: sticky;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+}
+
+/* Style the footer */
+footer {
+  margin-left: 20.5%;
+  background: #e1c3ec;
+  padding: 10px;
+  text-align: center;
+  position: static;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+}
+
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.container-fluid p {
+  text-align: center;
+  display: block;
+  font-size: 1.05;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.bg-starship {
+  background: #cdd613;
+}
+
+.bg-chathams {
+  background: #0aa1b9;
+}
+
+.bg-matisse {
+  background: #0b385d;
+}
+
+.about-content-box>h4 {
+  color: #fff;
+  text-transform: none;
+  font-weight: normal;
+  padding: 20px 0 10px 0;
+}
+
+h4 {
+  text-align: center;
+  display: block;
+  font-size: 1.83em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+
+
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
