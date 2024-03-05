@@ -31,17 +31,17 @@ nav {
   top: 10px;
   bottom: 10px;
   left: 10px;
+  text-align: center;
 }
 
 /* Style the list inside the menu */
 nav img {
-  margin-left: 30%;
   color: transparent;
 }
 
 nav ul {
-  margin: 25%;
   list-style-type: none;
+  text-align: center;
   font-size: 14px;
   padding: 0;
 }
@@ -68,13 +68,11 @@ nav ul li a:active {
 }
 
 nav p {
-  margin: 2%;
   font-size: 14px;
   color: grey;
 }
 
 nav h2 {
-  margin-left: 18%;
   font-size: 16px;
 }
 
