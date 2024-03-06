@@ -89,7 +89,7 @@ article {
 /* Style the footer */
 footer {
   margin-left: 20.5%;
-  background: #e1c3ec;
+  background: #fff;
   padding: 10px;
   text-align: center;
   position: static;
@@ -105,6 +105,7 @@ footer {
   padding-right: 15px;
   padding-left: 15px;
   width: 100%;
+  text-align: center;
 }
 
 .container-fluid p {
@@ -115,7 +116,7 @@ footer {
   margin-block-end: 1.67em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  font-weight: bold;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -132,6 +133,13 @@ footer {
   -ms-flex: 0 0 33.333333%;
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
+}
+
+.col-md-4 i {
+  color: #fff;
+  height: 150px;
+  line-height: 150px;
+  font-size: 100px;
 }
 
 .bg-starship {
