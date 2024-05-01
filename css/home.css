@@ -12,7 +12,6 @@ header {
   background-color: #666;
   padding: 30px;
   text-align: center;
-  font-size: 35px;
   color: black;
   background-image: url("/assets/nfce-banner.png");
   background-repeat: repeat;
@@ -68,7 +67,7 @@ nav ul li a:active {
 }
 
 nav p {
-  font-size: 14px;
+  font-size: 12px;
   color: grey;
 }
 
@@ -111,7 +110,7 @@ footer {
 .container-fluid p {
   text-align: center;
   display: block;
-  font-size: 1.05;
+  font-size: 0.05 !important;
   margin-block-start: 1.67em;
   margin-block-end: 1.67em;
   margin-inline-start: 0px;
@@ -164,7 +163,7 @@ footer {
 h4 {
   text-align: center;
   display: block;
-  font-size: 1.83em;
+  font-size: 1.30em;
   margin-block-start: 1.67em;
   margin-block-end: 1.67em;
   margin-inline-start: 0px;

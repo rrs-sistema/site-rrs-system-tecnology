@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    min-height: 500px;
+    background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+header .bg-gradient {
+    min-height: 300px;
+    width: 100%;    
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); 
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+}
+
+header .header-border {
+    display: flex;
+    border-bottom: rgba(255,255,255,.25) 1px solid;
+}
+
+header #logo {
+    width: 200px;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: #000 1px 1px 8px;
+} 
+.menu {
+    flex: 1;
+}
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+}
+.menu li {
+    min-width: 100px;
+    line-height: 28px;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.container-fluid p {
+  text-align: center;
+  display: block;
+  font-size: 0.05 !important;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-md-4 i {
+  color: #fff;
+  height: 150px;
+  line-height: 150px;
+  font-size: 100px;
+}
+
+.bg-starship {
+  background: #cdd613;
+}
+
+.bg-chathams {
+  background: #0aa1b9;
+}
+
+.bg-matisse {
+  background: #0b385d;
+}
+
+
+#register {
+    background-color: #FFF;
+    width: 100%;
+    height: 400px;
+    max-width: 350px;
+    position: absolute;
+    bottom: 0;
+    right: 10vw;
+    box-shadow: 0 0 2.1875rem rgba(140,152,164,.125);
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    padding: 20px;
+    color: #333;
+}
+
+#register p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+#register .field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#register input {
+    width: 100%;
+    padding: .75rem 1rem;
+    border-radius: 4px;
+    border: #CCC 1px solid;
+}
+
+#register textarea {
+    width: 100%;
+    padding: .75rem 1rem;
+    border-radius: 4px;
+    border: #CCC 1px solid;
+    resize: none;
+}
+
+#register input[type=radio] {
+    width: 25px;
+}
+
+#register button {
+    width: 100%;
+    border: none;
+    background-color: #E67E22;
+    color: #FFF;
+    padding: .75rem;
+    font-size: 1.2em;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title h1 {
+    font-size:3em;
+    border-bottom: #CCC 1px solid;
+    padding-bottom: 1rem;
+}
+.home p {
+    text-align: justify;
+}
+
+footer {
+    background-color: #f5f5f5;
+    color: #6c757d;
+    font-size: .8em;
+}
+
+footer p {
+    line-height: 35px; 
+}
+
+footer .container {
+    display: flex;
+}
+
+footer .menu a {
+    color: #6c757d;
+}
+
+.menu .open-menu {
+    display: none;    
+}
+
+.backdrop {
+    display:none;
+}
+.close-menu {
+    display: none;
+}
+
+@media(max-width: 450px) {
+    .menu .close-menu {
+        display: block;
+        text-align: right;
+        background-color: #eee;
+    }
+    .menu .close-menu button {
+        background: none;
+        border: none;
+        font-size: 2em;
+        padding: .75rem 1rem;
+    }
+    .menu.open .backdrop {
+        opacity: .5;
+        display: block;
+    }
+    .menu .backdrop {
+        opacity: 0;
+        background-color: #000;
+        transition: opacity .15s linear;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        left: 0;
+        top: 0;
+    }
+    header .header-border {
+        justify-content: space-between;
+    }
+    .menu ul {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -80vw;
+        width: 80vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 2;
+        margin: 0;
+        transition: right .2s linear;
+    }
+    .menu.open ul {
+        right: 0;
+    }
+    .menu.open a {
+        color: #000;
+        padding: 20px;
+        display: block;
+        font-weight: 100;
+        border-bottom: #ccc 1px solid;
+    }
+    .menu {
+        width: 60px;
+        flex: initial;
+    }
+    .menu .open-menu {
+        display: block;
+        font-size: 2em;
+        padding: .9rem;
+        flex: 1;
+        background: none;
+        border: none;
+        color: #fff;
+    }
+    #register {
+        width: 90%;
+        margin: 0 5%;
+        max-width: initial;
+        right: initial;
+    }
+}
+
+
+/*CARDs*/
+
+.secao4 {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.secao4-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.secao4-div-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3 - 60px);
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.secao4-div-card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.secao4-div-card img {
+    width: 35%;
+    height: auto;
+}
+
+.secao4-div-card h3 {
+    margin-bottom: 0px;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .secao4-div-card {
+        width: 100%;
+    }
+}

@@ -1,105 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RRS System Tecnology</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous">
+  </head>
+  <body>
 
-<head>
-  <title>Reobote PDV</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" type="image/x-icon" href="/assets/rrs_system_tecnology.jpg">
-  <link rel="stylesheet" type="text/css" href="/css/home.css">
-  <link rel="stylesheet" type="text/css" href="/css/home_principal.css">
-</head>
+    <header>
+      <form action id="register">
+        <p style="text-align: center;">Temos uma solução para o seu negócio</p>
+        <div class="field"><input type="text"
+            placeholder="Digite seu nome..."></div>
+        <div class="field"><input type="email"
+            placeholder="Digite seu e-mail..."></div>
+            <div class="field">
+            <textarea id="w3review" name="descricao" rows="4" placeholder="Informe sua necessidade...">
+            </textarea>
+            </div>
+          <label><input type="radio" name="gender"
+              value="M"><span>Desenvolvimento</span></label>
+          <label><input type="radio" name="gender"
+              value="F"><span>Consultoria</span></label>
+        </div>
+        <div style="margin-top: 20px;">
+          <button type="button">Enviar</button>
+        </div>
+      </form>
 
-<body>
+      <div class="bg-gradient">
 
-  <section>
-    <nav>
-      <p>
-        <img src="/assets/rrs_system_tecnology.jpg" id="logo" />
-      <h2>RRS System Tecnology</h2>
-      </p>
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=d8Zea4M6ie8" target="_blank"><i
-              class="fa fa-fw fa-home"></i>Apresentação</a></li>
-        <hr />
-        <li><a href="https://www.youtube.com/watch?v=lxuKM-wpFUU&list=PLMibyndz00bfyKfhOUJKf_cYo_3NzPNgf"
-            target="_blank"><i class="fa fa-fw fa-server"></i>Sistema PDV</a>
-        </li>
-        <hr />
-        <li><a href="https://www.youtube.com/watch?v=yazHqCEUbro&list=PLMibyndz00bfyKfhOUJKf_cYo_3NzPNgf&index=5"
-            target="_blank"><i class="fa fa-fw fa-coffee"></i>Sistema FOOD</a></li>
-        <hr />
-        <li><a href="https://www.youtube.com/watch?v=yazHqCEUbro&list=PLMibyndz00bfyKfhOUJKf_cYo_3NzPNgf&index=5"
-            target="_blank"><i class="fa fa-fw fa-scissors"></i>Sistema Salão de Beleza</a></li>
-        <hr />
-        <li><a href="#"><i class="fa fa-fw fa-phone"></i>Contato</a></li>
-        <hr />
-      </ul>
-      <p>&#169;RRS System Technology - 2023 Todos os direitos reservados.</p>
-    </nav>
-    <article id="home-index">
-      <div class="carousel slide carousel-fade">
-        <div class="carousel-item active slides">
-          <div class="overlay">
-            <div class="slide-1">
-              <h1>RRS System Technology</h1>
+        <div class="header-border">
+
+          <div id="logo">
+            <img src="./assets/images/logo-principal-RRS-system-technology.png"
+              style="color: white;" id="logo" />
+          </div>
+
+          <nav class="menu">
+            <button type="button" class="open-menu"><i
+                class="fas fa-bars"></i></button>
+            <div class="backdrop"></div>
+            <ul>
+              <li class="close-menu"><button type="button"><i
+                    class="fas fa-times"></i></button></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="desenvolvimento.html">Desenvolvimento</a></li>
+              <li><a href="consultoria-assessoria.html">Consultoria e
+                  Assessoria</a></li>
+              <li><a href="about.html">Ajuda</a></li>
+              <li><a href="contact.html">Contato</a></li>
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <section class="home">
+      <main class="container">
+        <div class="title">
+          <h1>RRS System Tecnology</h1>
+        </div>
+        <!-- Seção com cards -->
+        <section class="secao4" id="sobre">
+          <div class="secao4-div">
+            <!-- Card 1 -->
+            <div class="secao4-div-card bg-starship about-content-box">
+              <i class="fa fa-fw fa-handshake-o" aria-hidden="true"></i>
+              <h3>Consultoria e Assessoria</h3>
+              <p>Seja mostrando o caminho ou entregando uma solução pronta a
+                RRS System Technology está aqui para
+                ajudá-lo.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="secao4-div-card bg-chathams">
+              <h3>Desenvolvimento</h3>
+              <p>A RRS System Technology atua no desenvolvimento de novos
+                sistemas e/ou na migração de sistemas legados.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="secao4-div-card bg-matisse">
+              <h3>Integração/Migração</h3>
+              <p>Está precisando integrar seu software com sistemas prontos
+                tais como Paypal ou softwares do Governo? A
+                RRS System Technology faz isso pra você.</p>
             </div>
           </div>
-          <div class="hero">
-            <hgroup class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-              <p> Consultoria - Assessoria - Integração - Análise - Software</p>
-            </hgroup>
-          </div>
-        </div>
+        </section>
+      </main>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>Todos os direitos reservados</p>
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="desenvolvimento.html">Desenvolvimento</a></li>
+            <li><a href="consultoria-assessoria.html">Consultoria e
+                Assessoria</a></li>
+            <li><a href="about.html">Ajuda</a></li>
+            <li><a href="contact.html">Contato</a></li>
+          </ul>
+        </nav>
       </div>
-    </article>
-    <article>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4 bg-starship about-content-box">
-            <i class="fa fa-fw fa-handshake-o" aria-hidden="true"></i>
-            <h4>Consultoria e Assessoria</h4>
-            <p>Seja mostrando o caminho ou entregando uma solução pronta a RRS System Technology está aqui para
-              ajudá-lo.
-            </p>
-          </div>
-          <div class="col-md-4 bg-chathams">
-            <i class="fa fa-fw fa-keyboard-o" aria-hidden="true"></i>
-            <h4>Desenvolvimento</h4>
-            <p>A RRS System Technology atua no desenvolvimento de novos sistemas e/ou na migração de sistemas legados.
-            </p>
-          </div>
-          <div class="col-md-4 bg-matisse">
-            <i class="fa fa-fw fa-arrows-h" aria-hidden="true"></i>
-            <h4>Integração/Migração</h4>
-            <p>Está precisando integrar seu software com sistemas prontos tais como Paypal ou softwares do Governo? A
-              RRS System Technology faz isso pra você..
-            </p>
-          </div>
-        </div>
-      </div>
-    </article>
-    <!-- <article>
-      <h1>RRS System Tecnology</h1>
-      <h2>VOCÊ TEM UMA GRANDE IDEIA? VAMOS IMPLEMENTAR!</h2>
-      <p>
-        A RRS System Tecnology atua no desenvolvimento de novos sistemas e/ou na migração de sistemas legados.
-      </p>
-      <p>Sistema de Ponto de Venda 1.0 - RRS System Tecnology.</p>
-      <p>Versão para celular(Android) e computador(Windows)</p>
-      <p>Você tem um BAR ou um Restaurante?
-        Controlar suas Comandas, Entregas,
-        Compras, Estoque e financeiro de
-        forma ágil e fácil.</p>
-
-    </article> -->
-  </section>
-
-  <footer>
-    <p>&#169;RRS System Technology | Nosso compromisso é com o seu sucesso!</p>
-  </footer>
-
-</body>
-
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
