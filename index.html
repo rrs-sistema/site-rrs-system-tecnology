@@ -14,25 +14,6 @@
   <body>
 
     <header>
-      <form action id="register">
-        <p style="text-align: center;">Temos uma solução para o seu negócio</p>
-        <div class="field"><input type="text"
-            placeholder="Digite seu nome..."></div>
-        <div class="field"><input type="email"
-            placeholder="Digite seu e-mail..."></div>
-            <div class="field">
-            <textarea id="w3review" name="descricao" rows="4" placeholder="Informe sua necessidade...">
-            </textarea>
-            </div>
-          <label><input type="radio" name="gender"
-              value="M"><span>Desenvolvimento</span></label>
-          <label><input type="radio" name="gender"
-              value="F"><span>Consultoria</span></label>
-        </div>
-        <div style="margin-top: 20px;">
-          <button type="button">Enviar</button>
-        </div>
-      </form>
 
       <div class="bg-gradient">
 
@@ -55,15 +36,28 @@
               <li><a href="consultoria-assessoria.html">Consultoria e
                   Assessoria</a></li>
               <li><a href="about.html">Ajuda</a></li>
-              <li><a href="contact.html">Contato</a></li>
+              <li><a href="contato.html">Contato</a></li>
             </ul>
           </nav>
-
         </div>
-
       </div>
-
     </header>
+
+    <aside><!-- Início aside -->
+      <section id="galeria">
+        <h4>Tecnologias que usamos</h4>
+        <h5>Trabalhamos com dirvesas Tecnologias para melhor te atender</h5>
+        <ol class="lower-greek">
+          <li>Java</li>
+          <li>NodeJS</li>
+          <li>Flutter</li>
+          <li>AngularJS</li>
+          <li>Jira</li>
+          <li>Bitbucket</li>
+          <li>Trello</li>
+        </ol>
+      </section>
+    </aside><!--/fim aside -->
 
     <section class="home">
       <main class="container">
@@ -99,6 +93,46 @@
       </main>
     </section>
 
+    <section class="home">
+      <main class="container">
+        <div class="title">
+          <h2>Nossos produtos prontos</h2>
+        </div>
+        <!-- Seção com cards -->
+        <section class="secao4" id="sobre">
+          <div class="secao4-div">
+            <!-- Card 1 -->
+            <div
+              class="secao4-div-card-produto bg-starship-pdv about-content-box">
+              <i class="fa fa-fw fa-handshake-o" aria-hidden="true"></i>
+              <h3>Reobote PDV</h3>
+              <p>Gerencie suas Vendas, Compras, Estoque, Contas a Pagar e
+                Receber
+                entre
+                outros...</p>
+              <img src="./assets/images/dashboard.png"
+                alt="Descricao imagem" height="250" width="250">
+            </div>
+            <!-- Card 2 -->
+            <div class="secao4-div-card-produto bg-chathams-pdv">
+              <h3>Cardapio Digital</h3>
+              <p>Faça reserva e gerencie suas comandas de forma digital...</p>
+              <img src="./assets/images/gerenciamento-comanda.png"
+                alt="Gerenciamento de comandas" height="250" width="250">
+            </div>
+            <!-- Card 3 -->
+            <div class="secao4-div-card-produto bg-matisse-pdv">
+              <h3>Ordem de serviços</h3>
+              <p>Gerencie suas ordens de serviços de forma fácil e
+                digital...</p>
+              <img src="./assets/images/dashboard-de-ordem-servicos.png"
+                alt="Gerenciamento de ordens de serviços" height="250" width="250">                
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+
     <footer>
       <div class="container">
         <p>Todos os direitos reservados</p>
@@ -109,10 +143,31 @@
             <li><a href="consultoria-assessoria.html">Consultoria e
                 Assessoria</a></li>
             <li><a href="about.html">Ajuda</a></li>
-            <li><a href="contact.html">Contato</a></li>
+            <li><a href="contato.html">Contato</a></li>
           </ul>
         </nav>
       </div>
+
+        <form action id="register">
+        <p style="text-align: center;">Temos uma solução para o seu negócio</p>
+        <div class="field"><input type="text"
+            placeholder="Digite seu nome..."></div>
+        <div class="field"><input type="email"
+            placeholder="Digite seu e-mail..."></div>
+            <div class="field">
+            <textarea id="w3review" name="descricao" rows="4" placeholder="Como podemos te ajudar?">
+            </textarea>
+            </div>
+          <label><input type="radio" name="gender"
+              value="M"><span>Desenvolvimento</span></label>
+          <label><input type="radio" name="gender"
+              value="F"><span>Consultoria</span></label>
+        </div>
+        <div style="margin-top: 20px; margin-bottom: 5px;">
+          <button type="button">Enviar</button>
+        </div>
+      </form> 
+
     </footer>
     <script src="assets/js/script.js"></script>
   </body>
