@@ -7,6 +7,8 @@
     <title>RRS System Tecnology</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/containner-flip.css">
+    <link rel="stylesheet" href="assets/css/ol-dynamyc.css">
 
     <link rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -41,11 +43,12 @@
     </header>
 
     <aside><!-- Início aside -->
-      <section id="galeria">
+      <section>
         <h2>Sobre</h2>
         <h4>Uma breve descrição sobre mim</h4>
         <ol class="georgian">
-          <li>Sou um desenvolvedor de software experiente e versátil, com um
+          <li>Sou um desenvolvedor de software
+            experiente e versátil, com um
             amplo conhecimento em várias tecnologias e ferramentas. Com mais 10
             anos de experiência em <b>Java e C#</b>, Possuo uma base sólida em
             programação orientada a objetos e desenvolvimento de aplicativos
@@ -81,23 +84,16 @@
             desenvolvemos sistemas, aplicativos e prestamos consultoria.
             Atualmente temos alguns produtos prontos para uso como: ponto de
             venda<b>(PDV)</b>, um sistema de <b>salão de beleza</b> e um
-            <b>sistema de controle de comanda</b> para restaurantes, sistema
-            de <b>ordens de serviços</b> .</li>
+            <b>sistema de controle de comanda</b> para restaurantes e sistema
+            WEB
+            para controlar as <b>ordens de serviços</b> .</li>
           <hr>
-          <hr>
-          <li>LinkedIn <a
-              href="https://www.linkedin.com/in/rivaldo-roberto-9b448941/"
-              target="_blank">Mais sobre mim
-            </a>
-          </li>
-          <hr>
-          <hr>
-          <li>GitHub <a
-              href="https://github.com/rrs-sistema"
-              target="_blank">Meus conhecimentos
-            </a>
-          </li>
-          <hr>
+
+          <li>Atualmente trabalho no regime CLT como desenvolvedor fullstack
+            sênior, usamos <b>Java</b> e o <b>Ecossistema spring boot</b> e
+            <b>spring
+              boot/batch</b> no back-end e
+            <b>Angular</b> no front-end e <b> SQL</b> usando oracle.</li>
           <hr>
         </ol>
       </section>
@@ -110,38 +106,32 @@
             src="./assets/images/avatar-rivaldo.jpg">
         </div>
         <h1>Rivaldo Roberto da Silva</h1>
-        <!-- Seção com cards -->
         <section class="secao4">
           <div class="secao4-div">
-            <!-- Card 1 -->
-            <div class="secao4-div-card bg-starship about-content-box">
-              <h3>Habilidades</h3>
-              <ol class="lower-greek">
-                <li>Java</li>
-                <li>C#</li>
-                <li>NodeJS</li>
-                <li>Flutter</li>
-                <li>AngularJS</li>
+            <div class="secao4-div-card bg-starship">
+              <div class="escritaStatic">Habilidades</div>
+              <ol class="lower-greek escritaDinamico">
+                <li><span>Java</span></li>
+                <li><span>C#</span></li>
+                <li><span>Flutter</span></li>
+                <li><span>Angular</span></li>
               </ol>
             </div>
-            <!-- Card 2 -->
             <div class="secao4-div-card bg-chathams">
-              <h3>Cultura DevOps</h3>
-              <ol class="lower-greek">
-                <li>GIT</li>
-                <li>Kubernetes</li>
-                <li>Docker</li>
-                <li>Jenkins</li>
-                <li>BamBoo</li>
+              <div class="escritaStatic">Cultura DevOps</div>
+              <ol class="georgian escritaDinamico">
+                <li><span>JGIT</span></li>
+                <li><span>JKubernetes</span></li>
+                <li><span>JDocker</span></li>
+                <li><span>JBamBoo</span></li>
               </ol>
             </div>
-            <!-- Card 3 -->
             <div class="secao4-div-card bg-matisse">
-              <h3>Controle de versão</h3>
-              <ol class="lower-greek">
-                <li>Jira</li>
-                <li>Bitbucket</li>
-                <li>Trello</li>
+              <div class="escritaStatic">Controle versão</div>
+              <ol class="lower-greek escritaDinamico">
+                <li><span>JJira</span></li>
+                <li><span>JBitbucket</span></li>
+                <li><span>Trello</span></li>
               </ol>
             </div>
           </div>
@@ -154,24 +144,55 @@
         <div class="title">
           <h2>Nossos produtos prontos</h2>
         </div>
-        <div class="secao4-div">
+        <div class="secao4-div-produto">
           <div
-            class="secao4-div-card-produto bg-starship-pdv about-content-box">
+            class="secao4-div-card-produto bg-starship-pdv">
             <h3>Reobote PDV</h3>
-            <p>Gerencie suas Vendas, Compras, Estoque, Contas a Pagar e
-              Receber
-              entre
-              outros...</p>
-            <img src="./assets/images/dashboard.png"
-              alt="Descricao imagem" height="250" width="250">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="./assets/images/dashboard.png" />
+                  <p>Acompanhe suas receitas e despesas, fluxos de caixa, contas
+                    a pagagamentos e recebimentos vencidos, desenpenho de vendas
+                    e seu estoque.</p>
+                </div>
+                <div class="back">
+                  <img src="./assets/images/finalizando-venda.png" />
+                  <p>Finalize sua venda com cartão de crédito e débito, PIX e
+                    controle os FIADOS dos seus clientes.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="secao4-div-card-produto bg-chathams-pdv">
+          <!-- <div class="secao4-div-card-produto bg-chathams-pdv">
             <h3>Cardapio Digital</h3>
             <p>Faça reserva e gerencie suas comandas de forma digital...</p>
             <img src="./assets/images/gerenciamento-comanda.png"
               alt="Gerenciamento de comandas" height="250" width="250">
+          </div> -->
+          <div
+            class="secao4-div-card-produto bg-chathams-pdv">
+            <h3>Reobote Cardapio Digital</h3>
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="./assets/images/gerenciamento-comanda.png" />
+                  <p>Faça reserva e gerencie suas comandas no
+                    estabelecimento(Indor), Takeout e Delivery...</p>
+                </div>
+                <div class="back">
+                  <img
+                    src="./assets/images/gerencie-varias-comandas-na-mesma-mesa.png" />
+                  <p>Gerencie as comandas de cada mesa, você pode incluir várias
+                    comandas em uma única mesa facilitando assim na hora do
+                    pagamento.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="secao4-div-card-produto bg-matisse-pdv">
+
+          <div class="secao4-div-card-produto bg-matisse-pdv"
+            style="margin-top: 10px !important;">
             <h3>Ordem de serviços</h3>
             <p>Gerencie suas ordens de serviços de forma fácil e
               digital...</p>
@@ -179,6 +200,7 @@
               alt="Gerenciamento de ordens de serviços" height="250"
               width="250">
           </div>
+
         </div>
       </main>
     </section>
@@ -190,7 +212,8 @@
         </div>
         <div class="content">
           <h2>Desenvolvimento de Software & Concultoria</h2>
-          <p>Somos uma empresa especializada em desenvolvimento de software sob
+          <p>A RRS System Technology é uma empresa especializada em
+            desenvolvimento de software sob
             medida para atender às necessidades dos nossos clientes.</p>
           <p>Nossos serviços incluem:</p>
           <ul>
@@ -249,6 +272,23 @@
     </dialog>
 
     <footer>
+
+      <div class="container-social">
+        <a href="https://www.linkedin.com/in/rivaldo-roberto-9b448941/"
+          target="_blank">
+          <img src="./assets/images/icon/linkedin-4-32.png">
+        </a>
+        <a href="https://github.com/rrs-sistema"
+          target="_blank">
+          <img src="./assets/images/icon/github-10-32-001.png">
+        </a>
+        <a
+          href="https://www.youtube.com/watch?v=u9VbdzLAPOE"
+          target="_blank">
+          <img src="./assets/images/icon/youtube-32.png">
+        </a>
+      </div>
+
       <div class="container">
         <p>Todos os direitos reservados</p>
         <nav class="menu">

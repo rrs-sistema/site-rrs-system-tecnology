@@ -1,0 +1,54 @@
+.escritaStatic {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.escritaDinamico {
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.escritaDinamico li {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    left: 0;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+
+.escritaDinamico li span {
+    position: relative;
+}
+
+.escritaDinamico li span::after {
+    content: "";
+    position: sticky;
+    width: 1px;
+    height: 100%;
+    left: 35px;
+    border-left: 1px solid #111111;
+    animation: typing 1.8s steps(10) infinite;
+    background: #111111;
+}
+
+.escritaDinamico li span {
+    position: sticky;
+}
+
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
