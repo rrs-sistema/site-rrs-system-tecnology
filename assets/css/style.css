@@ -466,3 +466,13 @@ ol.georgian {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.minha-div {
+    height: 100px;
+    width: 100px;
+}
