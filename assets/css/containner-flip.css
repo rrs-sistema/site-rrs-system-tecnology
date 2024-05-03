@@ -26,3 +26,30 @@
 .back {
     transform: rotateY(180deg);
 }
+
+@media (max-width: 768px) {
+    .flip-container {
+        width: 345px;
+        height: 300px;
+        perspective: 1000px;
+    }
+
+    .flip-container .flipper img {
+        width: 300px;
+        height: auto;
+        perspective: 1000px;
+    }
+    
+    .flip-container .flipper img {
+        width: 300px;
+        height: auto;
+        perspective: 1000px;
+    }
+        
+    .flip-container .flipper p {
+        text-align: center;
+        text-overflow: initial;
+        text-wrap: wrap;
+    }
+
+}
