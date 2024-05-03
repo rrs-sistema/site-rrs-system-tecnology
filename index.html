@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RRS System Tecnology</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+
     <link rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
@@ -14,16 +16,12 @@
   <body>
 
     <header>
-
-      <div class="bg-gradient">
-
+      <div class="bg-gradient" id="sectionHome">
         <div class="header-border">
-
           <div id="logo">
             <img src="./assets/images/logo-principal-RRS-system-technology.png"
               style="color: white;" id="logo" />
           </div>
-
           <nav class="menu">
             <button type="button" class="open-menu"><i
                 class="fas fa-bars"></i></button>
@@ -31,12 +29,11 @@
             <ul>
               <li class="close-menu"><button type="button"><i
                     class="fas fa-times"></i></button></li>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="desenvolvimento.html">Desenvolvimento</a></li>
-              <li><a href="consultoria-assessoria.html">Consultoria e
-                  Assessoria</a></li>
-              <li><a href="about.html">Ajuda</a></li>
-              <li><a href="contato.html">Contato</a></li>
+              <li><a href="#sectionHome">Home</a></li>
+              <li><a href="#sectionNossosProdutosProntos">Produtos</a></li>
+              <li><a href="#sectionConsultoria">Consultoria</a></li>
+              <li><a href="#nossaEmpresa">Nossa Empresa</a></li>
+              <li><a href="#register">Contato</a></li>
             </ul>
           </nav>
         </div>
@@ -50,8 +47,8 @@
         <ol class="lower-greek">
           <li>Java</li>
           <li>NodeJS</li>
-          <li>Flutter</li>
-          <li>AngularJS</li>
+          <li>Flutter - Mobile</li>
+          <li>AngularJS - Web</li>
           <li>Jira</li>
           <li>Bitbucket</li>
           <li>Trello</li>
@@ -59,18 +56,18 @@
       </section>
     </aside><!--/fim aside -->
 
-    <section class="home">
+    <section class="home" id="sectionConsultoria">
       <main class="container">
         <div class="title">
           <h1>RRS System Tecnology</h1>
         </div>
         <!-- Seção com cards -->
-        <section class="secao4" id="sobre">
+        <section class="secao4">
           <div class="secao4-div">
             <!-- Card 1 -->
             <div class="secao4-div-card bg-starship about-content-box">
               <i class="fa fa-fw fa-handshake-o" aria-hidden="true"></i>
-              <h3>Consultoria e Assessoria</h3>
+              <h3>Consultoria</h3>
               <p>Seja mostrando o caminho ou entregando uma solução pronta a
                 RRS System Technology está aqui para
                 ajudá-lo.</p>
@@ -83,7 +80,7 @@
             </div>
             <!-- Card 3 -->
             <div class="secao4-div-card bg-matisse">
-              <h3>Integração/Migração</h3>
+              <h3>Integração</h3>
               <p>Está precisando integrar seu software com sistemas prontos
                 tais como Paypal ou softwares do Governo? A
                 RRS System Technology faz isso pra você.</p>
@@ -93,82 +90,124 @@
       </main>
     </section>
 
-    <section class="home">
+    <section class="home" id="sectionNossosProdutosProntos">
       <main class="container">
         <div class="title">
           <h2>Nossos produtos prontos</h2>
         </div>
-        <!-- Seção com cards -->
-        <section class="secao4" id="sobre">
-          <div class="secao4-div">
-            <!-- Card 1 -->
-            <div
-              class="secao4-div-card-produto bg-starship-pdv about-content-box">
-              <i class="fa fa-fw fa-handshake-o" aria-hidden="true"></i>
-              <h3>Reobote PDV</h3>
-              <p>Gerencie suas Vendas, Compras, Estoque, Contas a Pagar e
-                Receber
-                entre
-                outros...</p>
-              <img src="./assets/images/dashboard.png"
-                alt="Descricao imagem" height="250" width="250">
-            </div>
-            <!-- Card 2 -->
-            <div class="secao4-div-card-produto bg-chathams-pdv">
-              <h3>Cardapio Digital</h3>
-              <p>Faça reserva e gerencie suas comandas de forma digital...</p>
-              <img src="./assets/images/gerenciamento-comanda.png"
-                alt="Gerenciamento de comandas" height="250" width="250">
-            </div>
-            <!-- Card 3 -->
-            <div class="secao4-div-card-produto bg-matisse-pdv">
-              <h3>Ordem de serviços</h3>
-              <p>Gerencie suas ordens de serviços de forma fácil e
-                digital...</p>
-              <img src="./assets/images/dashboard-de-ordem-servicos.png"
-                alt="Gerenciamento de ordens de serviços" height="250" width="250">                
-            </div>
+        <div class="secao4-div">
+          <div
+            class="secao4-div-card-produto bg-starship-pdv about-content-box">
+            <i class="fa fa-fw fa-handshake-o" aria-hidden="true"></i>
+            <h3>Reobote PDV</h3>
+            <p>Gerencie suas Vendas, Compras, Estoque, Contas a Pagar e
+              Receber
+              entre
+              outros...</p>
+            <img src="./assets/images/dashboard.png"
+              alt="Descricao imagem" height="250" width="250">
           </div>
-        </section>
+          <div class="secao4-div-card-produto bg-chathams-pdv">
+            <h3>Cardapio Digital</h3>
+            <p>Faça reserva e gerencie suas comandas de forma digital...</p>
+            <img src="./assets/images/gerenciamento-comanda.png"
+              alt="Gerenciamento de comandas" height="250" width="250">
+          </div>
+          <div class="secao4-div-card-produto bg-matisse-pdv">
+            <h3>Ordem de serviços</h3>
+            <p>Gerencie suas ordens de serviços de forma fácil e
+              digital...</p>
+            <img src="./assets/images/dashboard-de-ordem-servicos.png"
+              alt="Gerenciamento de ordens de serviços" height="250"
+              width="250">
+          </div>
+        </div>
       </main>
     </section>
+
+    <section class="home" id="nossaEmpresa">
+      <div class="container">
+        <div class="header">
+          <h1>Nossa Empresa</h1>
+        </div>
+        <div class="content">
+          <h2>Desenvolvimento de Software</h2>
+          <p>Somos uma empresa especializada em desenvolvimento de software sob
+            medida para atender às necessidades dos nossos clientes.</p>
+          <p>Nossos serviços incluem:</p>
+          <ul>
+            <li>Desenvolvimento de aplicativos web e mobile</li>
+            <li>Integração de sistemas</li>
+            <li>Consultoria em TI</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="home" id="contato">
+      <div class="container">
+        <div class="header">
+          <h1>Nossa Empresa</h1>
+        </div>
+        <div class="content">
+          <div id="register">
+            <p style="text-align: center;">Temos uma solução para o seu
+              negócio</p>
+            <div class="field"><input type="text" id="nome" name="nome"
+                placeholder="Digite seu nome..."></div>
+            <div class="field"><input type="email" id="email" name="email"
+                placeholder="Digite seu e-mail..."></div>
+            <div class="field">
+              <textarea id="descricao" name="descricao" rows="4"
+                placeholder="Como podemos te ajudar?">
+            </textarea>
+            </div>
+            <label>
+              <input type="radio" id="inputRadioDesenvolvimento"
+                name="inputRadio"
+                value="desenvolvimento"><span>Desenvolvimento</span>
+            </label>
+            <label>
+              <input type="radio" id="inputRadioConsultoria" name="inputRadio"
+                value="consultoria"><span>Consultoria</span>
+            </label>
+
+            <input class="btn_enviar" type="submit" id="btn_enviar"
+              name="btn_enviar" value="Enviar" onclick="enviar()">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+
+    <dialog id="modalAlerta">
+      <header
+        style="background-color: transparent; background-image: none !important; min-height: 70px !important;">
+        <h3 class="headerModal" id="tituloAlerta"></h3>
+      </header>
+      <section class="mensagemAlertaModal" id="mensagemAlerta"></section>
+      <footer>
+        <button onclick="closeModalAlerta()"
+          id="closeDialogFooter">Sair</button>
+      </footer>
+    </dialog>
 
     <footer>
       <div class="container">
         <p>Todos os direitos reservados</p>
         <nav class="menu">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="desenvolvimento.html">Desenvolvimento</a></li>
-            <li><a href="consultoria-assessoria.html">Consultoria e
-                Assessoria</a></li>
-            <li><a href="about.html">Ajuda</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#sectionHome">Home</a></li>
+            <li><a href="#sectionNossosProdutosProntos">Produtos</a></li>
+            <li><a href="#sectionConsultoria">Consultoria</a></li>
+            <li><a href="#sobre">Nossa Empresa</a></li>
+            <li><a href="#register">Contato</a></li>
           </ul>
         </nav>
       </div>
 
-        <form action id="register">
-        <p style="text-align: center;">Temos uma solução para o seu negócio</p>
-        <div class="field"><input type="text"
-            placeholder="Digite seu nome..."></div>
-        <div class="field"><input type="email"
-            placeholder="Digite seu e-mail..."></div>
-            <div class="field">
-            <textarea id="w3review" name="descricao" rows="4" placeholder="Como podemos te ajudar?">
-            </textarea>
-            </div>
-          <label><input type="radio" name="gender"
-              value="M"><span>Desenvolvimento</span></label>
-          <label><input type="radio" name="gender"
-              value="F"><span>Consultoria</span></label>
-        </div>
-        <div style="margin-top: 20px; margin-bottom: 5px;">
-          <button type="button">Enviar</button>
-        </div>
-      </form> 
-
     </footer>
-    <script src="assets/js/script.js"></script>
+
   </body>
 </html>

@@ -1,0 +1,40 @@
+#modalAlerta {
+    width: 450px;
+    height: 150px;
+    background-color: #343a59;
+    border-radius: 10px;
+    padding: 20px;
+    align-content: start;
+    padding: 5px;
+    border-color: white;
+}
+
+.headerModal {
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #343a59;
+    /* #32626F; */
+    float: none;
+    font-size: 22px;
+}
+
+.mensagemAlertaModal {
+    color: white;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+#closeDialogFooter {
+    background-color: gray;
+    color: white;
+    padding: 10px 45px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-color: white;
+}
