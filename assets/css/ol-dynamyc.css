@@ -37,9 +37,9 @@
     width: 1px;
     height: 100%;
     left: 35px;
-    border-left: 1px solid #111111;
+    border-left: 1px solid #fff;
     animation: typing 1.8s steps(10) infinite;
-    background: #111111;
+    background: #fff;
 }
 
 .escritaDinamico li span {
