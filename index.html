@@ -32,7 +32,8 @@
       </div>
     </section>
 
-    <!-- Produtos - Nova Versão -->
+    <!-- Produtos com Flip Card -->
+
     <section class="home" id="sectionNossosProdutosProntos">
       <div class="container empresa-container">
         <h1>Nossos Produtos</h1>
@@ -40,60 +41,90 @@
 
         <div class="produtos-novos">
           <!-- Produto 1 -->
-          <div class="card-produto" data-aos="fade-up" data-aos-delay="100">
-            <div class="topo-card cor-pdv">
-              <span class="emoji">🛒</span>
-              <h3>Reobote PDV</h3>
-              <p>PDV moderno com controle de vendas e finanças.</p>
+          <div class="flip-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="flipper">
+              <div class="front card-produto cor-pdv">
+                <div class="topo-card">
+                  <span class="emoji">🛒</span>
+                  <h3>Reobote PDV</h3>
+                  <p>PDV moderno com controle de vendas e finanças.</p>
+                </div>
+                <img src="./assets/images/dashboard.png" alt="Reobote PDV">
+              </div>
+              <div class="back card-produto">
+                <div class="produto-back">
+                  <h3>Reobote PDV</h3>
+                  <ul>
+                    <li>💳 Aceita cartão, PIX e fiado</li>
+                    <li>🧑‍💻 Interface amigável</li>
+                    <li>📊 Relatórios automatizados</li>
+                  </ul>
+                  <a href="#contato" class="btn-produto">Solicitar
+                    Demonstração</a>
+                </div>
+              </div>
             </div>
-            <img src="./assets/images/dashboard.png" alt="Reobote PDV">
-            <ul class="lista-beneficios">
-              <li>💳 Aceita cartão, PIX e fiado</li>
-              <li>🧑‍💻 Interface amigável</li>
-              <li>📊 Relatórios automatizados</li>
-            </ul>
-            <a href="#contato" class="btn-produto">Solicitar Demonstração</a>
           </div>
 
           <!-- Produto 2 -->
-          <div class="card-produto" data-aos="fade-up" data-aos-delay="150">
-            <div class="topo-card cor-cardapio">
-              <span class="emoji">📋</span>
-              <h3>Reobote Cardápio Digital</h3>
-              <p>Pedidos integrados com salão, delivery e PDV.</p>
+          <div class="flip-container" data-aos="fade-up" data-aos-delay="150">
+            <div class="flipper">
+              <div class="front card-produto cor-cardapio">
+                <div class="topo-card">
+                  <span class="emoji">📋</span>
+                  <h3>Reobote Cardápio Digital</h3>
+                  <p>Pedidos integrados com salão, delivery e PDV.</p>
+                </div>
+                <img src="./assets/images/gerenciamento-comanda.png"
+                  alt="Cardápio Digital">
+              </div>
+              <div class="back card-produto">
+                <div class="produto-back">
+                  <h3>Reobote Cardápio Digital</h3>
+                  <ul>
+                    <li>🍽️ Pedidos por mesa ou cliente</li>
+                    <li>⏱️ Visualização em tempo real</li>
+                    <li>✅ Fechamento otimizado</li>
+                  </ul>
+                  <a href="#contato" class="btn-produto">Solicitar
+                    Demonstração</a>
+                </div>
+              </div>
             </div>
-            <img src="./assets/images/gerenciamento-comanda.png"
-              alt="Cardápio Digital">
-            <ul class="lista-beneficios">
-              <li>🍽️ Pedidos por mesa ou cliente</li>
-              <li>⏱️ Visualização em tempo real</li>
-              <li>✅ Fechamento otimizado</li>
-            </ul>
-            <a href="#contato" class="btn-produto">Solicitar Demonstração</a>
           </div>
 
           <!-- Produto 3 -->
-          <div class="card-produto" data-aos="fade-up" data-aos-delay="200">
-            <div class="topo-card cor-os">
-              <span class="emoji">🔧</span>
-              <h3>Ordem de Serviços</h3>
-              <p>Gestão de O.S. com indicadores e controle técnico.</p>
+          <div class="flip-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="flipper">
+              <div class="front card-produto cor-os">
+                <div class="topo-card">
+                  <span class="emoji">🔧</span>
+                  <h3>Ordem de Serviços</h3>
+                  <p>Gestão de O.S. com indicadores e controle técnico.</p>
+                </div>
+                <img src="./assets/images/dashboard-de-ordem-servicos.png"
+                  alt="Ordem de Serviço">
+              </div>
+              <div class="back card-produto">
+                <div class="produto-back">
+                  <h3>Ordem de Serviços</h3>
+                  <ul>
+                    <li>📝 Cadastro de equipamentos</li>
+                    <li>🔄 Status por ordem</li>
+                    <li>📈 Dashboard com indicadores</li>
+                  </ul>
+                  <a href="#contato" class="btn-produto">Solicitar
+                    Demonstração</a>
+                </div>
+              </div>
             </div>
-            <img src="./assets/images/dashboard-de-ordem-servicos.png"
-              alt="Ordem de Serviço">
-            <ul class="lista-beneficios">
-              <li>📝 Cadastro de equipamentos</li>
-              <li>🔄 Status por ordem</li>
-              <li>📈 Dashboard com indicadores</li>
-            </ul>
-            <a href="#contato" class="btn-produto">Solicitar Demonstração</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Nossa Atuação -->
-    <section class="home" id="nossaAtuacao">
+    <section class="home" id="nossaEmpresa">
       <div class="container empresa-container">
         <h1>Nossa Atuação</h1>
         <h2>Serviços e Soluções Personalizadas</h2>
@@ -116,104 +147,131 @@
       </div>
     </section>
 
-    <!-- Empresa -->
     <section class="home" id="nossaEmpresa">
       <div class="container empresa-container">
-        <h1>Sobre a RRS System Technology</h1>
-        <h2>Transformamos desafios em soluções digitais</h2>
-        <p>A <b>RRS System Technology</b> nasceu para entregar soluções
-          acessíveis e eficazes, ajudando empresas a crescer com inovação e
-          agilidade.
-        </p>
-        <div class="empresa-destaques"> <div
-            class="empresa-card">
-            <h3>💻 Desenvolvimento</h3><p>Aplicativos web e
-              mobile sob medida.</p></div> <div class="empresa-card"><h3>🔗
-              Integração</h3><p>Conexão entre sistemas e automação de
-              processos.</p></div> <div class="empresa-card"><h3>🧭
-              Consultoria</h3><p>Estratégia de TI alinhada ao seu
-              negócio.</p></div> </div> <h3>Por que escolher a RRS?
-        </h3>
-
-        <ul>
-          <li>Mais de 10 anos de experiência em tecnologia</li>
-          <li>Atendimento personalizado e próximo</li>
-          <li>Especialistas em projetos sob medida</li>
-          <li>Foco em performance, usabilidade e inovação</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Contato -->
-    <section class="home" id="contato">
-      <div class="container empresa-container">
-        <form id="register" class="form-profissional">
-          <h2 class="form-title">Fale Conosco</h2>
-
-          <div class="field">
-            <label for="nome">Nome completo</label>
-            <input type="text" id="nome" name="nome" placeholder="João da Silva"
-              required />
+        <h1>Nossa Atuação</h1>
+        <h2>Serviços e Soluções Personalizadas</h2>
+        <div class="empresa-destaques">
+          <div class="empresa-card">
+            <h3>🧩 Desenvolvimento Sob Medida</h3>
+            <p>Sistemas web, mobile ou desktop personalizados para sua
+              operação.</p>
           </div>
-
-          <div class="field">
-            <label for="email">E-mail profissional</label>
-            <input type="email" id="email" name="email"
-              placeholder="joao@email.com" required />
+          <div class="empresa-card">
+            <h3>🔗 Integrações e APIs</h3>
+            <p>Conectamos sistemas e automatizamos processos com
+              segurança.</p>
           </div>
-
-          <div class="field">
-            <label for="descricao">Mensagem</label>
-            <textarea id="descricao" name="descricao" rows="4"
-              placeholder="Como podemos te ajudar?" required></textarea>
+          <div class="empresa-card">
+            <h3>🧭 Consultoria Estratégica</h3>
+            <p>Mapeamento de processos e implementação de soluções
+              tecnológicas
+              alinhadas ao seu negócio.</p>
           </div>
+        </section>
 
-          <div class="field">
-            <label>Tipo de atendimento</label>
-            <div class="radio-group-inline">
-              <label><input type="radio" name="inputRadio"
-                  value="desenvolvimento" required /> Desenvolvimento de
-                Software</label>
-              <label><input type="radio" name="inputRadio"
-                  value="consultoria" /> Consultoria Técnica</label>
-            </div>
+        <!-- Empresa -->
+        <section class="home" id="nossaEmpresa">
+          <div class="container empresa-container">
+            <h1>Sobre a RRS System Technology</h1>
+            <h2>Transformamos desafios em soluções digitais</h2>
+            <p>A <b>RRS System Technology</b> nasceu para entregar soluções
+              acessíveis e eficazes, ajudando empresas a crescer com inovação e
+              agilidade.
+            </p>
+            <div class="empresa-destaques"> <div
+                class="empresa-card">
+                <h3>💻 Desenvolvimento</h3><p>Aplicativos web e
+                  mobile sob medida.</p></div> <div class="empresa-card"><h3>🔗
+                  Integração</h3><p>Conexão entre sistemas e automação de
+                  processos.</p></div> <div class="empresa-card"><h3>🧭
+                  Consultoria</h3><p>Estratégia de TI alinhada ao seu
+                  negócio.</p></div> </div> <h3>Por que escolher a RRS?
+            </h3>
+
+            <ul>
+              <li>Mais de 10 anos de experiência em tecnologia</li>
+              <li>Atendimento personalizado e próximo</li>
+              <li>Especialistas em projetos sob medida</li>
+              <li>Foco em performance, usabilidade e inovação</li>
+            </ul>
           </div>
+        </section>
 
-          <button type="submit" class="btn_enviar">Solicitar Contato</button>
-        </form>
-      </div>
-    </section>
+        <!-- Contato -->
+        <section class="home" id="contato">
+          <div class="container empresa-container">
+            <form id="register" class="form-profissional">
+              <h2 class="form-title">Fale Conosco</h2>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container-social">
-        <a href="https://www.linkedin.com/in/rivaldo-roberto-9b448941/"
-          target="_blank" rel="noopener noreferrer">
-          <img src="./assets/images/icon/linkedin-4-32.png" alt="LinkedIn" />
-        </a>
-        <a href="https://github.com/rrs-sistema" target="_blank"
-          rel="noopener noreferrer">
-          <img src="./assets/images/icon/github-10-32-001.png" alt="GitHub" />
-        </a>
-        <a href="https://www.youtube.com/watch?v=u9VbdzLAPOE" target="_blank"
-          rel="noopener noreferrer">
-          <img src="./assets/images/icon/youtube-32.png" alt="YouTube" />
-        </a>
-      </div>
-      <div class="container">
-        <p>© 2025 RRS System Technology - Todos os direitos reservados</p>
-        <nav class="menu">
-          <ul>
-            <li><a href="#sectionHome">Home</a></li>
-            <li><a href="#sectionNossosProdutosProntos">Produtos</a></li>
-            <li><a href="#nossaAtuacao">Serviços</a></li>
-            <li><a href="#nossaEmpresa">Empresa</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
+              <div class="field">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome"
+                  placeholder="João da Silva"
+                  required />
+              </div>
 
-    <script src="assets/js/script.js"></script>
-  </body>
-</html>
+              <div class="field">
+                <label for="email">E-mail profissional</label>
+                <input type="email" id="email" name="email"
+                  placeholder="joao@email.com" required />
+              </div>
+
+              <div class="field">
+                <label for="descricao">Mensagem</label>
+                <textarea id="descricao" name="descricao" rows="4"
+                  placeholder="Como podemos te ajudar?" required></textarea>
+              </div>
+
+              <div class="field">
+                <label>Tipo de atendimento</label>
+                <div class="radio-group-inline">
+                  <label><input type="radio" name="inputRadio"
+                      value="desenvolvimento" required /> Desenvolvimento de
+                    Software</label>
+                  <label><input type="radio" name="inputRadio"
+                      value="consultoria" /> Consultoria Técnica</label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn_enviar">Solicitar
+                Contato</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+          <div class="container-social">
+            <a href="https://www.linkedin.com/in/rivaldo-roberto-9b448941/"
+              target="_blank" rel="noopener noreferrer">
+              <img src="./assets/images/icon/linkedin-4-32.png"
+                alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/rrs-sistema" target="_blank"
+              rel="noopener noreferrer">
+              <img src="./assets/images/icon/github-10-32-001.png"
+                alt="GitHub" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=u9VbdzLAPOE"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img src="./assets/images/icon/youtube-32.png" alt="YouTube" />
+            </a>
+          </div>
+          <div class="container">
+            <p>© 2025 RRS System Technology - Todos os direitos reservados</p>
+            <nav class="menu">
+              <ul>
+                <li><a href="#sectionHome">Home</a></li>
+                <li><a href="#sectionNossosProdutosProntos">Produtos</a></li>
+                <li><a href="#nossaAtuacao">Serviços</a></li>
+                <li><a href="#nossaEmpresa">Empresa</a></li>
+                <li><a href="#contato">Contato</a></li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
+
+      </body>
+    </html>
