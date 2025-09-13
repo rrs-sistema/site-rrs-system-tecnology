@@ -1,307 +1,219 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RRS System Tecnology</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/modal.css">
-    <link rel="stylesheet" href="assets/css/containner-flip.css">
-    <link rel="stylesheet" href="assets/css/ol-dynamyc.css">
-    <link rel="stylesheet" href="assets/css/secao-card.css">
-    <link rel="stylesheet" href="assets/css/pulse_event.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RRS System Technology</title>
+
+    <!-- Fonts & CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
   </head>
   <body>
-
-    <header>
-      <div class="bg-gradient" id="sectionHome">
-        <div class="header-border">
-          <div id="logo">
-            <img src="./assets/images/logo-principal-RRS-system-technology.png"
-              style="color: white;" id="logo" />
-          </div>
-          <nav class="menu">
-            <button type="button" class="open-menu">
-              <img src="./assets/images/icon/column.png" style="height: 40px;"></img>
-            </button>
-            <div class="backdrop"></div>
-            <ul>
-              <li class="close-menu">
-                <button type="button">
-                  <img src="./assets/images/icon/delete.png" style="height: 40px;"></img>
-                </button></li>
-              <li><a href="#sectionHome">Home</a></li>
-              <li><a href="#sectionNossosProdutosProntos">Produtos</a></li>
-              <li><a href="#sectionConsultoria">Consultoria</a></li>
-              <li><a href="#nossaEmpresa">Nossa Empresa</a></li>
-              <li><a href="#register">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+    <!-- Header -->
+    <section class="hero" id="sectionHome">
+      <div class="container">
+        <h1 data-aos="fade-down">Soluções Digitais para Empresas
+          Inteligentes</h1>
+        <p data-aos="fade-up">Transformamos ideias em sistemas prontos para
+          impulsionar sua operação.</p>
+        <a href="#contato">
+          <button class="btn_cta" data-aos="zoom-in">Solicite uma
+            demonstração</button>
+        </a>
       </div>
-    </header>
-
-    <aside><!-- Início aside -->
-      <section>
-        <h2>Sobre</h2>
-        <h4>Uma breve descrição sobre mim</h4>
-        <ol class="georgian">
-          <li>Sou um desenvolvedor de software
-            experiente e versátil, com um
-            amplo conhecimento em várias tecnologias e ferramentas. Com mais 10
-            anos de experiência em <b>Java e C#</b>, Possuo uma base sólida em
-            programação orientada a objetos e desenvolvimento de aplicativos
-            robustos.</li>
-          <hr>
-          <li>Tenho domínio em desenvolvimento WEB com <b>Angular</b> trabalhei
-            por mais de 7 anos e tenho habilidade em criar interfaces de usuário
-            dinâmicas e responsivas.</li>
-          <hr>
-          <li>Além disso, Possuo mais de 5 anos de experiência em <b>Flutter</b>
-            desenvolvendo aplicativos móveis multiplataforma de alta
-            qualidade. <a
-              href="https://www.youtube.com/watch?v=IGLebHbxnCc&list=RDCMUCkRXDd4nZtjqFgj7wWdfuVw&index=2"
-              target="_blank">Aqui um app desenvolvido por mim començando no
-              01.57
-            </a>
-          </li>
-          <hr>
-          <li>Trabalho com ferramentas de controle de versão como <b>GIT</b>, e
-            ferramentas de automação como <b>Kubernetes, Docker, Jenkins e
-              BamBoo</b>,
-            com isso tenho compromisso com práticas modernas de desenvolvimento
-            e
-            entrega de software.</li>
-          <hr>
-          <li>Tenho experiência em gerenciamento de projetos usando ferramentas
-            como <b>Jira, Bitbucket e Trello</b>, com isso posso trabalhar com
-            equipe e
-            sou capaz de colaborar efetivamente em equipes e gerenciar o ciclo
-            de vida completo de um projeto de software.</li>
-          <hr>
-          <li>Além disso, estou criando uma empresa a RRS System Technology onde
-            desenvolvemos sistemas, aplicativos e prestamos consultoria.
-            Atualmente temos alguns produtos prontos para uso como: ponto de
-            venda<b>(PDV)</b>, um sistema de <b>salão de beleza</b> e um
-            <b>sistema de controle de comanda</b> para restaurantes e sistema
-            WEB
-            para controlar as <b>ordens de serviços</b> .</li>
-          <hr>
-
-          <li>Atualmente trabalho no regime CLT como desenvolvedor fullstack
-            sênior, usamos <b>Java</b> e o <b>Ecossistema spring boot</b> e
-            <b>spring
-              boot/batch</b> no back-end e
-            <b>Angular</b> no front-end e <b> SQL</b> usando oracle.</li>
-          <hr>
-        </ol>
-      </section>
-    </aside><!--/fim aside -->
-
-    <section class="home" id="sectionConsultoria">
-      <main class="container">
-        <div class="title minha-div">
-          <img
-            src="./assets/images/avatar-rivaldo.jpg">
-        </div>
-        <h1>Rivaldo Roberto da Silva</h1>
-        <p>Analisra Desenvolvedor Sênior </p>
-        <p style="font-size: 12px;">Sempre em busca de conhecimento para melhor
-          servir.</p>
-        <section class="secao4">
-          <div class="secao4-div">
-            <div class="secao4-div-card bg-starship">
-              <div class="escritaStatic">Habilidades</div>
-              <ol class="lower-greek escritaDinamico">
-                <li><span>Java</span></li>
-                <li><span>C#</span></li>
-                <li><span>Flutter</span></li>
-                <li><span>Angular</span></li>
-              </ol>
-            </div>
-            <div class="secao4-div-card bg-chathams">
-              <div class="escritaStatic">Cultura DevOps</div>
-              <ol class="georgian escritaDinamico">
-                <li><span>GIT</span></li>
-                <li><span>Kubernetes</span></li>
-                <li><span>Docker</span></li>
-                <li><span>BamBoo</span></li>
-              </ol>
-            </div>
-            <div class="secao4-div-card bg-matisse">
-              <div class="escritaStatic">Controle de versão</div>
-              <ol class="lower-greek escritaDinamico">
-                <li><span>Jira</span></li>
-                <li><span>Bitbucket</span></li>
-                <li><span>Trello</span></li>
-              </ol>
-            </div>
-          </div>
-        </section>
-      </main>
     </section>
 
+    <!-- Produtos - Nova Versão -->
     <section class="home" id="sectionNossosProdutosProntos">
-      <main class="container">
-        <div class="title pulseEvent" style="color: black !important;">
-          <h2>Nossos produtos prontos</h2>
-        </div>
-        <div class="secao4-div-produto">
-          <div
-            class="secao4-div-card-produto bg-starship-pdv">
-            <h3>Reobote PDV</h3>
-            <div class="flip-container">
-              <div class="flipper">
-                <div class="front">
-                  <img src="./assets/images/dashboard.png" />
-                  <p>Acompanhe suas receitas e despesas, fluxos de caixa, contas
-                    a pagagamentos e recebimentos vencidos, desenpenho de vendas
-                    e seu estoque.</p>
-                </div>
-                <div class="back">
-                  <img src="./assets/images/finalizando-venda.png" />
-                  <p>Finalize sua venda com cartão de crédito e débito, PIX e
-                    controle os FIADOS dos seus clientes.</p>
-                </div>
-              </div>
+      <div class="container empresa-container">
+        <h1>Nossos Produtos</h1>
+        <h2>Soluções digitais para acelerar o seu negócio</h2>
+
+        <div class="produtos-novos">
+          <!-- Produto 1 -->
+          <div class="card-produto" data-aos="fade-up" data-aos-delay="100">
+            <div class="topo-card cor-pdv">
+              <span class="emoji">🛒</span>
+              <h3>Reobote PDV</h3>
+              <p>PDV moderno com controle de vendas e finanças.</p>
             </div>
-          </div>
-          <div
-            class="secao4-div-card-produto bg-chathams-pdv">
-            <h3>Reobote Cardapio Digital</h3>
-            <div class="flip-container">
-              <div class="flipper">
-                <div class="front">
-                  <img src="./assets/images/gerenciamento-comanda.png" />
-                  <p>Faça reserva e gerencie suas comandas no
-                    estabelecimento(Indor), Takeout e Delivery...</p>
-                </div>
-                <div class="back">
-                  <img
-                    src="./assets/images/gerencie-varias-comandas-na-mesma-mesa.png" />
-                  <p>Gerencie as comandas de cada mesa, você pode incluir várias
-                    comandas em uma única mesa facilitando assim na hora do
-                    pagamento.</p>
-                </div>
-              </div>
-            </div>
+            <img src="./assets/images/dashboard.png" alt="Reobote PDV">
+            <ul class="lista-beneficios">
+              <li>💳 Aceita cartão, PIX e fiado</li>
+              <li>🧑‍💻 Interface amigável</li>
+              <li>📊 Relatórios automatizados</li>
+            </ul>
+            <a href="#contato" class="btn-produto">Solicitar Demonstração</a>
           </div>
 
-          <div class="secao4-div-card-produto bg-matisse-pdv"
-            style="margin-top: 10px !important;">
-            <h3>Ordem de serviços</h3>
-            <p>Gerencie suas ordens de serviços de forma fácil e
-              digital...</p>
+          <!-- Produto 2 -->
+          <div class="card-produto" data-aos="fade-up" data-aos-delay="150">
+            <div class="topo-card cor-cardapio">
+              <span class="emoji">📋</span>
+              <h3>Reobote Cardápio Digital</h3>
+              <p>Pedidos integrados com salão, delivery e PDV.</p>
+            </div>
+            <img src="./assets/images/gerenciamento-comanda.png"
+              alt="Cardápio Digital">
+            <ul class="lista-beneficios">
+              <li>🍽️ Pedidos por mesa ou cliente</li>
+              <li>⏱️ Visualização em tempo real</li>
+              <li>✅ Fechamento otimizado</li>
+            </ul>
+            <a href="#contato" class="btn-produto">Solicitar Demonstração</a>
+          </div>
+
+          <!-- Produto 3 -->
+          <div class="card-produto" data-aos="fade-up" data-aos-delay="200">
+            <div class="topo-card cor-os">
+              <span class="emoji">🔧</span>
+              <h3>Ordem de Serviços</h3>
+              <p>Gestão de O.S. com indicadores e controle técnico.</p>
+            </div>
             <img src="./assets/images/dashboard-de-ordem-servicos.png"
-              alt="Gerenciamento de ordens de serviços" height="250"
-              width="250">
+              alt="Ordem de Serviço">
+            <ul class="lista-beneficios">
+              <li>📝 Cadastro de equipamentos</li>
+              <li>🔄 Status por ordem</li>
+              <li>📈 Dashboard com indicadores</li>
+            </ul>
+            <a href="#contato" class="btn-produto">Solicitar Demonstração</a>
           </div>
-
         </div>
-      </main>
+      </div>
     </section>
 
+    <!-- Nossa Atuação -->
+    <section class="home" id="nossaAtuacao">
+      <div class="container empresa-container">
+        <h1>Nossa Atuação</h1>
+        <h2>Serviços e Soluções Personalizadas</h2>
+        <div class="empresa-destaques">
+          <div class="empresa-card">
+            <h3>🧩 Desenvolvimento Sob Medida</h3>
+            <p>Sistemas web, mobile ou desktop personalizados para sua
+              operação.</p>
+          </div>
+          <div class="empresa-card">
+            <h3>🔗 Integrações e APIs</h3>
+            <p>Conectamos sistemas e automatizamos processos com segurança.</p>
+          </div>
+          <div class="empresa-card">
+            <h3>🧭 Consultoria Estratégica</h3>
+            <p>Mapeamento de processos e implementação de soluções tecnológicas
+              alinhadas ao seu negócio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Empresa -->
     <section class="home" id="nossaEmpresa">
-      <div class="container">
-        <div class="header">
-          <h1>Sobre Nossa Empresa</h1>
-        </div>
-        <div class="content">
-          <h2>Desenvolvimento de Software & Concultoria</h2>
-          <p>A RRS System Technology é uma empresa especializada em
-            desenvolvimento de software sob
-            medida para atender às necessidades dos nossos clientes.</p>
-          <p>Nossos serviços incluem:</p>
-          <ul>
-            <li>Desenvolvimento de aplicativos web e mobile</li>
-            <li>Integração de sistemas</li>
-            <li>Consultoria em TI</li>
-          </ul>
-        </div>
+      <div class="container empresa-container">
+        <h1>Sobre a RRS System Technology</h1>
+        <h2>Transformamos desafios em soluções digitais</h2>
+        <p>A <b>RRS System Technology</b> nasceu para entregar soluções
+          acessíveis e eficazes, ajudando empresas a crescer com inovação e
+          agilidade.
+        </p>
+        <div class="empresa-destaques"> <div
+            class="empresa-card">
+            <h3>💻 Desenvolvimento</h3><p>Aplicativos web e
+              mobile sob medida.</p></div> <div class="empresa-card"><h3>🔗
+              Integração</h3><p>Conexão entre sistemas e automação de
+              processos.</p></div> <div class="empresa-card"><h3>🧭
+              Consultoria</h3><p>Estratégia de TI alinhada ao seu
+              negócio.</p></div> </div> <h3>Por que escolher a RRS?
+        </h3>
+
+        <ul>
+          <li>Mais de 10 anos de experiência em tecnologia</li>
+          <li>Atendimento personalizado e próximo</li>
+          <li>Especialistas em projetos sob medida</li>
+          <li>Foco em performance, usabilidade e inovação</li>
+        </ul>
       </div>
     </section>
 
+    <!-- Contato -->
     <section class="home" id="contato">
-      <div class="container">
-        <div class="content">
-          <div id="register">
-            <p
-              style="text-align: center; margin-top: -10px !important; margin-bottom: 5px !important;">Temos
-              uma solução para o seu
-              negócio</p>
-            <div class="field"><input type="text" id="nome" name="nome"
-                placeholder="Digite seu nome..." autocomplete="off"></div>
-            <div class="field"><input type="email" id="email" name="email"
-                placeholder="Digite seu e-mail..." autocomplete="off"></div>
-            <div class="field">
-              <textarea id="descricao" name="descricao" rows="4"
-                placeholder="Como podemos te ajudar?" autocomplete="off">
-            </textarea>
-            </div>
-            <label>
-              <input type="radio" id="inputRadioDesenvolvimento"
-                name="inputRadio"
-                value="desenvolvimento"><span>Desenvolvimento</span>
-            </label>
-            <label>
-              <input type="radio" id="inputRadioConsultoria" name="inputRadio"
-                value="consultoria"><span>Consultoria</span>
-            </label>
+      <div class="container empresa-container">
+        <form id="register" class="form-profissional">
+          <h2 class="form-title">Fale Conosco</h2>
 
-            <input class="btn_enviar pulseEvent" type="submit" id="btn_enviar"
-              name="btn_enviar" value="Enviar" onclick="enviar()">
-
+          <div class="field">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="João da Silva"
+              required />
           </div>
-        </div>
+
+          <div class="field">
+            <label for="email">E-mail profissional</label>
+            <input type="email" id="email" name="email"
+              placeholder="joao@email.com" required />
+          </div>
+
+          <div class="field">
+            <label for="descricao">Mensagem</label>
+            <textarea id="descricao" name="descricao" rows="4"
+              placeholder="Como podemos te ajudar?" required></textarea>
+          </div>
+
+          <div class="field">
+            <label>Tipo de atendimento</label>
+            <div class="radio-group-inline">
+              <label><input type="radio" name="inputRadio"
+                  value="desenvolvimento" required /> Desenvolvimento de
+                Software</label>
+              <label><input type="radio" name="inputRadio"
+                  value="consultoria" /> Consultoria Técnica</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn_enviar">Solicitar Contato</button>
+        </form>
       </div>
     </section>
 
-    <script src="assets/js/script.js"></script>
-
-    <dialog id="modalAlerta">
-      <header
-        style="background-color: transparent; background-image: none !important; min-height: 70px !important;">
-        <h3 class="headerModal" id="tituloAlerta"></h3>
-      </header>
-      <section class="mensagemAlertaModal" id="mensagemAlerta"></section>
-      <footer>
-        <button onclick="closeModalAlerta()"
-          id="closeDialogFooter">Sair</button>
-      </footer>
-    </dialog>
-
+    <!-- Footer -->
     <footer>
       <div class="container-social">
-              <a href="https://www.linkedin.com/in/rivaldo-roberto-9b448941/"
-              target="_blank" >
-              <img src="./assets/images/icon/linkedin-4-32.png" class="container-social-link">
-            </a>
-            <a href="https://github.com/rrs-sistema"
-              target="_blank">
-              <img src="./assets/images/icon/github-10-32-001.png" class="container-social-link">
-            </a>
-            <a
-              href="https://www.youtube.com/watch?v=u9VbdzLAPOE"
-              target="_blank">
-              <img src="./assets/images/icon/youtube-32.png" class="container-social-link">
-            </a>
+        <a href="https://www.linkedin.com/in/rivaldo-roberto-9b448941/"
+          target="_blank" rel="noopener noreferrer">
+          <img src="./assets/images/icon/linkedin-4-32.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/rrs-sistema" target="_blank"
+          rel="noopener noreferrer">
+          <img src="./assets/images/icon/github-10-32-001.png" alt="GitHub" />
+        </a>
+        <a href="https://www.youtube.com/watch?v=u9VbdzLAPOE" target="_blank"
+          rel="noopener noreferrer">
+          <img src="./assets/images/icon/youtube-32.png" alt="YouTube" />
+        </a>
       </div>
-
       <div class="container">
-        <p>Todos os direitos reservados</p>
+        <p>© 2025 RRS System Technology - Todos os direitos reservados</p>
         <nav class="menu">
           <ul>
             <li><a href="#sectionHome">Home</a></li>
             <li><a href="#sectionNossosProdutosProntos">Produtos</a></li>
-            <li><a href="#sectionConsultoria">Consultoria</a></li>
-            <li><a href="#nossaEmpresa">Nossa Empresa</a></li>
-            <li><a href="#register">Contato</a></li>
+            <li><a href="#nossaAtuacao">Serviços</a></li>
+            <li><a href="#nossaEmpresa">Empresa</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
       </div>
-
     </footer>
 
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
