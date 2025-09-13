@@ -15,7 +15,7 @@ html {
 
 body {
   font-family: 'Poppins', Arial, sans-serif;
-  background: #f4f6f9;
+  background: #f7f5fa; /* fundo claro puxando para lilás */
   color: #333;
   line-height: 1.8;
   font-weight: 300;
@@ -33,7 +33,7 @@ body {
 .hero {
   padding: 100px 20px;
   text-align: center;
-  background: linear-gradient(120deg, #0b385d, #0aa1b9);
+  background: linear-gradient(120deg, #7b4397, #9f5fdd); /* lilás degradê */
   color: #fff;
 }
 
@@ -50,7 +50,7 @@ body {
 
 .btn_cta {
   padding: 14px 32px;
-  background: #E67E22;
+  background: #9f5fdd; /* lilás */
   color: #fff;
   font-weight: 600;
   border: none;
@@ -62,7 +62,7 @@ body {
 }
 
 .btn_cta:hover {
-  background: #d55d05;
+  background: #7b4397;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
   transform: translateY(-2px);
 }
@@ -97,8 +97,10 @@ body {
 }
 
 .topo-card {
-  padding: 24px 16px 16px;
-  border-bottom: 4px solid transparent;
+  margin: 12px 0 6px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #7b4397; /* título lilás */
 }
 
 .topo-card h3 {
@@ -139,7 +141,7 @@ body {
 }
 
 .btn-produto {
-  background: #E67E22;
+  background: #9f5fdd;
   color: #fff;
   font-weight: 600;
   padding: 12px 20px;
@@ -148,15 +150,14 @@ body {
   text-decoration: none;
   transition: background 0.3s ease;
 }
-
 .btn-produto:hover {
-  background: #cf6411;
+  background: #7b4397;
 }
 
 /* Cores temáticas por produto */
-.cor-pdv { border-color: #E67E22; }
-.cor-cardapio { border-color: #0aa1b9; }
-.cor-os { border-color: #8e44ad; }
+.cor-pdv { border-color: #9f5fdd; }
+.cor-cardapio { border-color: #7b4397; }
+.cor-os { border-color: #c084f5; }
 
 /* RESPONSIVO */
 @media(max-width: 900px) {
@@ -219,7 +220,7 @@ body {
 .form-profissional .form-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #0b385d;
+  color: #7b4397; /* lilás */
   text-align: center;
   margin-bottom: 25px;
 }
@@ -250,9 +251,9 @@ body {
 
 .form-profissional input:focus,
 .form-profissional textarea:focus {
-  border-color: #0aa1b9;
+  border-color: #9f5fdd;
   background-color: #fff;
-  box-shadow: 0 0 0 3px rgba(10, 161, 185, 0.1);
+  box-shadow: 0 0 0 3px rgba(159, 95, 221, 0.2);
   outline: none;
 }
 
@@ -287,19 +288,24 @@ body {
 }
 
 .btn_enviar:hover {
-  background: #d55d05;
+  background: #9f5fdd;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
   transform: translateY(-2px);
 }
-
+.btn_enviar:hover {
+  background: #7b4397;
+}
 /* ================================
    FOOTER
 ================================ */
 footer {
-  background: #0b385d;
+  background: #7b4397; /* rodapé lilás */
   color: #fff;
   padding: 20px;
   margin-top: 40px;
+}
+footer .menu a {
+  color: #fff;
 }
 
 footer p {
