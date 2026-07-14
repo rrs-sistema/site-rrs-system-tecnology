@@ -1,254 +1,420 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RRS System Technology</title>
+    <title>RRS System Technology | Soluções Digitais Premium</title>
 
-    <!-- Fonts & CSS -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  </head>
-  <body>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-  AOS.init();
-</script>
-    <!-- Header -->
-    <section class="hero" id="sectionHome">
-      <div class="container">
-        <h1 data-aos="fade-down">Soluções Digitais para Empresas
-          Inteligentes</h1>
-        <p data-aos="fade-up">Transformamos ideias em sistemas prontos para
-          impulsionar sua operação.</p>
-        <a href="#contato">
-          <button class="btn_cta" data-aos="zoom-in">Solicite uma
-            demonstração</button>
-        </a>
-      </div>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+    <header class="navbar-premium">
+        <div class="navbar-container">
+            <a href="#sectionHome" class="navbar-brand">
+                <div class="logo-icon"><i class="fa-solid fa-cube"></i></div>
+                <span>RRS <span>System</span></span>
+            </a>
+            <nav class="navbar-menu">
+                <ul>
+                    <li><a href="#sectionHome"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#sectionNossosProdutosProntos"><i class="fa-solid fa-layer-group"></i> Produtos</a></li>
+                    <li><a href="#nossaAtuacao"><i class="fa-solid fa-gears"></i> Serviços</a></li>
+                    <li><a href="#nossaEmpresa"><i class="fa-solid fa-circle-info"></i> Sobre</a></li>
+                    <li><a href="#contato" class="nav-cta-btn">Solicitar Contato</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Abrir Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero-premium" id="sectionHome">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-content">
+            <div class="badge" data-aos="fade-down" data-aos-duration="1000">
+                <span class="pulse-dot"></span> Inovação e Performance
+            </div>
+            <h1 data-aos="fade-up" data-aos-duration="1200">
+                Soluções Digitais para <br><span class="gradient-text">Empresas Inteligentes</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+                Transformamos ideias complexas em sistemas robustos e de alto desempenho prontos para impulsionar sua operação.
+            </p>
+            <div class="hero-ctas" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
+                <a href="#contato" class="btn-primary-premium">
+                    Solicite uma demonstração <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#sectionNossosProdutosProntos" class="btn-secondary-premium">
+                    Conhecer Produtos
+                </a>
+            </div>
+        </div>
     </section>
 
-    <!-- Produtos com Flip Card -->
+    <section class="stats-ribbon">
+        <div class="container stats-container">
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                <h3>+10</h3>
+                <p>Anos de Experiência</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                <h3>100%</h3>
+                <p>Projetos Sob Medida</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                <h3>Offline-First</h3>
+                <p>Tecnologia Inteligente</p>
+            </div>
+        </div>
+    </section>
 
     <section class="home" id="sectionNossosProdutosProntos">
-      <div class="container empresa-container">
-        <h1>Nossos Produtos</h1>
-        <h2>Soluções digitais para acelerar o seu negócio</h2>
-
-        <div class="produtos-novos">
-          <!-- Produto 1 -->
-          <div class="flip-container" data-aos="fade-up" data-aos-delay="100">
-            <div class="flipper">
-              <div class="front card-produto cor-pdv">
-                <div class="topo-card">
-                  <span class="emoji">🛒</span>
-                  <h3>Reobote PDV</h3>
-                  <p>PDV moderno com controle de vendas e finanças.</p>
-                </div>
-                <img src="./assets/images/dashboard.png" alt="Reobote PDV">
-              </div>
-              <div class="back card-produto">
-                <div class="produto-back">
-                  <h3>Reobote PDV</h3>
-                  <ul>
-                    <li>💳 Aceita cartão, PIX e fiado</li>
-                    <li>🧑‍💻 Interface amigável</li>
-                    <li>📊 Relatórios automatizados</li>
-                  </ul>
-                  <a href="#contato" class="btn-produto">Solicitar
-                    Demonstração</a>
-                </div>
-              </div>
+        <div class="container section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Sistemas Prontos e Escaláveis</span>
+                <h2 class="section-title">Nossos Produtos</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Aplicações com arquitetura de alta performance desenvolvidas para simplificar a rotina da sua equipe e aumentar sua margem de lucro.</p>
             </div>
-          </div>
 
-          <!-- Produto 2 -->
-          <div class="flip-container" data-aos="fade-up" data-aos-delay="150">
-            <div class="flipper">
-              <div class="front card-produto cor-cardapio">
-                <div class="topo-card">
-                  <span class="emoji">📋</span>
-                  <h3>Reobote Cardápio Digital</h3>
-                  <p>Pedidos integrados com salão, delivery e PDV.</p>
+            <div class="produtos-novos">
+                <div class="card-produto-premium cor-pdv" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-glow-bg"></div>
+                    <div class="topo-card">
+                        <div class="card-icon-wrapper pdv-theme">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <h3>Reobote PDV</h3>
+                        <p class="card-tagline">PDV moderno com controle de vendas e finanças.</p>
+                    </div>
+                    
+                    <div class="mockup-wrapper">
+                        <div class="mockup-frame">
+                            <div class="mockup-header">
+                                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            </div>
+                            <img src="./assets/images/dashboard.png" alt="Reobote PDV" onerror="this.src='https://placehold.co/600x400/1e293b/ffffff?text=Reobote+PDV'">
+                        </div>
+                    </div>
+                    
+                    <div class="produto-info">
+                        <ul class="lista-beneficios-premium">
+                            <li><i class="fa-solid fa-circle-check text-pdv"></i> Aceita cartão, PIX, dinheiro e fiado local</li>
+                            <li><i class="fa-solid fa-circle-check text-pdv"></i> Sincronização offline-first ultrarrápida</li>
+                            <li><i class="fa-solid fa-circle-check text-pdv"></i> Relatórios gerenciais e gráficos financeiros</li>
+                        </ul>
+                        <a href="#contato" class="btn-produto-premium">
+                            Solicitar Demonstração <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
                 </div>
-                <img src="./assets/images/gerenciamento-comanda.png"
-                  alt="Cardápio Digital">
-              </div>
-              <div class="back card-produto">
-                <div class="produto-back">
-                  <h3>Reobote Cardápio Digital</h3>
-                  <ul>
-                    <li>🍽️ Pedidos por mesa ou cliente</li>
-                    <li>⏱️ Visualização em tempo real</li>
-                    <li>✅ Fechamento otimizado</li>
-                  </ul>
-                  <a href="#contato" class="btn-produto">Solicitar
-                    Demonstração</a>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- Produto 3 -->
-          <div class="flip-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="flipper">
-              <div class="front card-produto cor-os">
-                <div class="topo-card">
-                  <span class="emoji">🔧</span>
-                  <h3>Ordem de Serviços</h3>
-                  <p>Gestão de O.S. com indicadores e controle técnico.</p>
+                <div class="card-produto-premium cor-cardapio" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-glow-bg"></div>
+                    <div class="topo-card">
+                        <div class="card-icon-wrapper cardapio-theme">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <h3>Reobote Cardápio Digital</h3>
+                        <p class="card-tagline">Pedidos integrados com salão, delivery e PDV.</p>
+                    </div>
+                    
+                    <div class="mockup-wrapper">
+                        <div class="mockup-frame">
+                            <div class="mockup-header">
+                                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            </div>
+                            <img src="./assets/images/gerenciamento-comanda.png" alt="Cardápio Digital" onerror="this.src='https://placehold.co/600x400/1e293b/ffffff?text=Card%C3%A1pio+Digital'">
+                        </div>
+                    </div>
+                    
+                    <div class="produto-info">
+                        <ul class="lista-beneficios-premium">
+                            <li><i class="fa-solid fa-circle-check text-cardapio"></i> Pedidos por QR Code, mesa ou WhatsApp</li>
+                            <li><i class="fa-solid fa-circle-check text-cardapio"></i> Atualização em tempo real na cozinha</li>
+                            <li><i class="fa-solid fa-circle-check text-cardapio"></i> Controle completo de estoque e comandas</li>
+                        </ul>
+                        <a href="#contato" class="btn-produto-premium">
+                            Solicitar Demonstração <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
                 </div>
-                <img src="./assets/images/dashboard-de-ordem-servicos.png"
-                  alt="Ordem de Serviço">
-              </div>
-              <div class="back card-produto">
-                <div class="produto-back">
-                  <h3>Ordem de Serviços</h3>
-                  <ul>
-                    <li>📝 Cadastro de equipamentos</li>
-                    <li>🔄 Status por ordem</li>
-                    <li>📈 Dashboard com indicadores</li>
-                  </ul>
-                  <a href="#contato" class="btn-produto">Solicitar
-                    Demonstração</a>
+
+                <div class="card-produto-premium cor-os" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-glow-bg"></div>
+                    <div class="topo-card">
+                        <div class="card-icon-wrapper os-theme">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3>Ordem de Serviços</h3>
+                        <p class="card-tagline">Gestão de O.S. com indicadores e controle técnico.</p>
+                    </div>
+                    
+                    <div class="mockup-wrapper">
+                        <div class="mockup-frame">
+                            <div class="mockup-header">
+                                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            </div>
+                            <img src="./assets/images/dashboard-de-ordem-servicos.png" alt="Ordem de Serviço" onerror="this.src='https://placehold.co/600x400/1e293b/ffffff?text=Ordem+de+Servi%C3%A7o'">
+                        </div>
+                    </div>
+                    
+                    <div class="produto-info">
+                        <ul class="lista-beneficios-premium">
+                            <li><i class="fa-solid fa-circle-check text-os"></i> Triagem e cadastro ágil de equipamentos</li>
+                            <li><i class="fa-solid fa-circle-check text-os"></i> Controle técnico com histórico unificado</li>
+                            <li><i class="fa-solid fa-circle-check text-os"></i> Dashboards analíticos de produtividade</li>
+                        </ul>
+                        <a href="#contato" class="btn-produto-premium">
+                            Solicitar Demonstração <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- Nossa Atuação -->
-    <section class="home" id="nossaEmpresa">
-      <div class="container empresa-container">
-        <h1>Nossa Atuação</h1>
-        <h2>Serviços e Soluções Personalizadas</h2>
-        <div class="empresa-destaques">
-          <div class="empresa-card">
-            <h3>🧩 Desenvolvimento Sob Medida</h3>
-            <p>Sistemas web, mobile ou desktop personalizados para sua
-              operação.</p>
-          </div>
-          <div class="empresa-card">
-            <h3>🔗 Integrações e APIs</h3>
-            <p>Conectamos sistemas e automatizamos processos com
-              segurança.</p>
-          </div>
-          <div class="empresa-card">
-            <h3>🧭 Consultoria Estratégica</h3>
-            <p>Mapeamento de processos e implementação de soluções
-              tecnológicas
-              alinhadas ao seu negócio.</p>
-          </div>
-        </section>
-
-        <!-- Empresa -->
-        <section class="home" id="nossaEmpresa">
-          <div class="container empresa-container">
-            <h1>Sobre a RRS System Technology</h1>
-            <h2>Transformamos desafios em soluções digitais</h2>
-            <p>A <b>RRS System Technology</b> nasceu para entregar soluções
-              acessíveis e eficazes, ajudando empresas a crescer com inovação e
-              agilidade.
-            </p>
-            <div class="empresa-destaques"> <div
-                class="empresa-card">
-                <h3>💻 Desenvolvimento</h3><p>Aplicativos web e
-                  mobile sob medida.</p></div> <div class="empresa-card"><h3>🔗
-                  Integração</h3><p>Conexão entre sistemas e automação de
-                  processos.</p></div> <div class="empresa-card"><h3>🧭
-                  Consultoria</h3><p>Estratégia de TI alinhada ao seu
-                  negócio.</p></div> </div> <h3>Por que escolher a RRS?
-            </h3>
-
-            <ul>
-              <li>Mais de 10 anos de experiência em tecnologia</li>
-              <li>Atendimento personalizado e próximo</li>
-              <li>Especialistas em projetos sob medida</li>
-              <li>Foco em performance, usabilidade e inovação</li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- Contato -->
-        <section class="home" id="contato">
-          <div class="container empresa-container">
-            <form id="register" class="form-profissional">
-              <h2 class="form-title">Fale Conosco</h2>
-
-              <div class="field">
-                <label for="nome">Nome completo</label>
-                <input type="text" id="nome" name="nome"
-                  placeholder="João da Silva"
-                  required />
-              </div>
-
-              <div class="field">
-                <label for="email">E-mail profissional</label>
-                <input type="email" id="email" name="email"
-                  placeholder="joao@email.com" required />
-              </div>
-
-              <div class="field">
-                <label for="descricao">Mensagem</label>
-                <textarea id="descricao" name="descricao" rows="4"
-                  placeholder="Como podemos te ajudar?" required></textarea>
-              </div>
-
-              <div class="field">
-                <label>Tipo de atendimento</label>
-                <div class="radio-group-inline">
-                  <label><input type="radio" name="inputRadio"
-                      value="desenvolvimento" required /> Desenvolvimento de
-                    Software</label>
-                  <label><input type="radio" name="inputRadio"
-                      value="consultoria" /> Consultoria Técnica</label>
+    <section class="home alternative-bg" id="nossaAtuacao">
+        <div class="container section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Serviços Customizados</span>
+                <h2 class="section-title">Nossa Atuação</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Construímos a ponte entre a sua visão e a engenharia de software de ponta, criando sistemas seguros e otimizados.</p>
+            </div>
+            
+            <div class="empresa-destaques">
+                <div class="empresa-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+                    <h3>Desenvolvimento Sob Medida</h3>
+                    <p>Sistemas corporativos web, aplicativos mobile cross-platform e softwares desktop personalizados projetados para a usabilidade e desempenho do seu negócio.</p>
                 </div>
-              </div>
+                <div class="empresa-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+                    <h3>Integrações e APIs</h3>
+                    <p>Conectamos as ferramentas que você já usa, orquestramos microsserviços modernos, criamos automações de dados robustas e garantimos fluxos seguros entre sistemas.</p>
+                </div>
+                <div class="empresa-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon"><i class="fa-solid fa-compass"></i></div>
+                    <h3>Consultoria Estratégica</h3>
+                    <p>Realizamos um mapeamento minucioso dos seus processos, mitigamos gaps operacionais e implementamos arquiteturas de software otimizadas para escalar seus negócios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-              <button type="submit" class="btn_enviar">Solicitar
-                Contato</button>
-            </form>
-          </div>
-        </section>
+    <section class="home" id="nossaEmpresa">
+        <div class="container section-container about-grid">
+            <div class="about-visual" data-aos="fade-right">
+                <div class="glowing-circle"></div>
+                <div class="visual-card">
+                    <span class="visual-tag"><i class="fa-solid fa-code"></i> Arquitetura Limpa</span>
+                    <h4>A Tecnologia Ideal Para a Sua Empresa Crescer</h4>
+                    <p>Desenvolvemos com as melhores práticas mundiais de mercado: clean code, offline-first, microsserviços escaláveis e design UI moderno.</p>
+                </div>
+            </div>
+            <div class="about-content" data-aos="fade-left">
+                <span class="section-subtitle">Quem Somos</span>
+                <h2 class="section-title left">Sobre a RRS System Technology</h2>
+                <div class="title-underline left"></div>
+                <p>Nascemos com a premissa de que a tecnologia de alta performance não precisa ser complexa. Desenhamos arquiteturas ágeis e eficientes com foco real no usuário, transformando desafios complexos de gestão em experiências digitais limpas e fáceis de operar.</p>
+                
+                <h3 class="about-cta-title">Por que escolher a RRS?</h3>
+                <ul class="about-points">
+                    <li><i class="fa-solid fa-shield-halved"></i> Mais de 10 anos de solidez em engenharia de software</li>
+                    <li><i class="fa-solid fa-heart-pulse"></i> Atendimento altamente consultivo, humano e personalizado</li>
+                    <li><i class="fa-solid fa-bolt"></i> Especialistas em performance, escalabilidade e design premium</li>
+                    <li><i class="fa-solid fa-cube"></i> Softwares resilientes que trabalham mesmo sem conexão de internet</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer>
-          <div class="container-social">
-            <a href="https://www.linkedin.com/in/rivaldo-roberto-9b448941/"
-              target="_blank" rel="noopener noreferrer">
-              <img src="./assets/images/icon/linkedin-4-32.png"
-                alt="LinkedIn" />
-            </a>
-            <a href="https://github.com/rrs-sistema" target="_blank"
-              rel="noopener noreferrer">
-              <img src="./assets/images/icon/github-10-32-001.png"
-                alt="GitHub" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=u9VbdzLAPOE"
-              target="_blank"
-              rel="noopener noreferrer">
-              <img src="./assets/images/icon/youtube-32.png" alt="YouTube" />
-            </a>
-          </div>
-          <div class="container">
-            <p>© 2025 RRS System Technology - Todos os direitos reservados</p>
-            <nav class="menu">
-              <ul>
-                <li><a href="#sectionHome">Home</a></li>
-                <li><a href="#sectionNossosProdutosProntos">Produtos</a></li>
-                <li><a href="#nossaAtuacao">Serviços</a></li>
-                <li><a href="#nossaEmpresa">Empresa</a></li>
-                <li><a href="#contato">Contato</a></li>
-              </ul>
-            </nav>
-          </div>
-        </footer>
+    <section class="home alternative-bg" id="contato">
+        <div class="container section-container">
+            <div class="contact-box" data-aos="zoom-in">
+                <div class="contact-info">
+                    <h3>Fale Conosco</h3>
+                    <p>Diga adeus a planilhas instáveis ou sistemas lentos. Conte-nos o que você precisa e um engenheiro de soluções entrará em contato para agendar uma demonstração gratuita.</p>
+                    
+                    <div class="contact-info-list">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <span>E-mail</span>
+                                <p>comercial@rrssystem.com.br</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <div>
+                                <span>Suporte Ágil</span>
+                                <p>SLA garantido de atendimento rápido</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      </body>
-    </html>
+                <div class="contact-form-wrapper">
+                    <form id="register" class="form-profissional-premium">
+                        <div class="field">
+                            <label for="nome">Nome completo</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" id="nome" name="nome" placeholder="ex: Rivaldo Roberto" required />
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="email">E-mail corporativo</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="ex: rivaldo@rrssystem.com" required />
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="descricao">Sua necessidade ou dúvida</label>
+                            <div class="input-wrapper align-start">
+                                <i class="fa-solid fa-message"></i>
+                                <textarea id="descricao" name="descricao" rows="3" placeholder="Como podemos impulsionar sua operação?" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Tipo de atendimento</label>
+                            <div class="radio-group-premium">
+                                <label class="radio-card">
+                                    <input type="radio" name="inputRadio" value="desenvolvimento" checked required />
+                                    <span class="radio-custom"></span>
+                                    <div class="radio-text">
+                                        <strong>Desenvolvimento</strong>
+                                        <span>Projetos sob medida</span>
+                                    </div>
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="inputRadio" value="consultoria" />
+                                    <span class="radio-custom"></span>
+                                    <div class="radio-text">
+                                        <strong>Consultoria</strong>
+                                        <span>Estratégia e TI</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-submit-premium">
+                            Enviar Solicitação <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand-section">
+                <a href="#sectionHome" class="footer-logo">
+                    <div class="logo-icon"><i class="fa-solid fa-cube"></i></div>
+                    <span>RRS <span>System</span></span>
+                </a>
+                <p>Engenharia de software de alto impacto e arquitetura sob medida para negócios digitais escaláveis.</p>
+                <div class="social-networks">
+                    <a href="https://www.linkedin.com/in/rivaldo-roberto-9b448941/" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/rrs-sistema" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=u9VbdzLAPOE" target="_blank" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-links-section">
+                <h4>Menu Principal</h4>
+                <ul>
+                    <li><a href="#sectionHome"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#sectionNossosProdutosProntos"><i class="fa-solid fa-chevron-right"></i> Produtos</a></li>
+                    <li><a href="#nossaAtuacao"><i class="fa-solid fa-chevron-right"></i> Serviços</a></li>
+                    <li><a href="#nossaEmpresa"><i class="fa-solid fa-chevron-right"></i> Empresa</a></li>
+                    <li><a href="#contato"><i class="fa-solid fa-chevron-right"></i> Fale Conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-section">
+                <h4>Segurança e Termos</h4>
+                <ul>
+                    <li><a href="politica-de-privacidade.html"><i class="fa-solid fa-chevron-right"></i> Política de Privacidade</a></li>
+                    <li><a href="exclusao-de-dados.html"><i class="fa-solid fa-chevron-right"></i> Exclusão de Dados</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 RRS System Technology. Todos os direitos reservados.</p>
+                <p>Criado com excelência em Engenharia de Software.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Menu Mobile Inteligente
+        const toggleBtn = document.querySelector('.mobile-menu-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+        
+        toggleBtn.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+            const icon = toggleBtn.querySelector('i');
+            if (navbarMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-xmark');
+            }
+        });
+
+        // Fechar menu mobile quando clicar em algum link
+        document.querySelectorAll('.navbar-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navbarMenu.classList.remove('active');
+                toggleBtn.querySelector('i').classList.add('fa-bars');
+                toggleBtn.querySelector('i').classList.remove('fa-xmark');
+            });
+        });
+
+        // Efeito de rolagem na Navbar (mudança de fundo)
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.navbar-premium');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
