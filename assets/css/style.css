@@ -1934,6 +1934,10 @@ ul {
     grid-template-columns: 1fr;
   }
 
+  .product-gallery {
+    margin-inline: 20px;
+  }
+
   .product-card:last-child {
     grid-column: auto;
     width: 100%;

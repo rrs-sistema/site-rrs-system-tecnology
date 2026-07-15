@@ -447,6 +447,7 @@
   setupReveal();
   setupActiveNavigation();
   setupProductLinks();
+  setupProductGalleries();
   setupImageFallbacks();
   setupCopyEmail();
   setupWhatsApp();
