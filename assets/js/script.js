@@ -395,4 +395,5 @@
   setupImageFallbacks();
   setupCopyEmail();
   setupForm();
+  setupBackToTop();
 })();
