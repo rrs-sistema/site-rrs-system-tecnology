@@ -125,29 +125,33 @@
     return true;
   };
 
-  const buildMailto = (form) => {
+  const getFormPayload = (form) => {
     const data = new FormData(form);
-    const nome = normalizeText(data.get("nome"));
-    const empresa = normalizeText(data.get("empresa")) || "Não informada";
-    const email = normalizeText(data.get("email"));
-    const telefone = normalizeText(data.get("telefone")) || "Não informado";
-    const interesse = normalizeText(data.get("interesse"));
-    const mensagem = normalizeText(data.get("mensagem"));
+    return {
+      nome: normalizeText(data.get("nome")),
+      empresa: normalizeText(data.get("empresa")) || "Não informada",
+      email: normalizeText(data.get("email")),
+      telefone: normalizeText(data.get("telefone")) || "Não informado",
+      interesse: normalizeText(data.get("interesse")),
+      mensagem: normalizeText(data.get("mensagem"))
+    };
+  };
 
-    const subject = `Solicitação comercial - ${interesse} - ${nome}`;
+  const buildMailto = (payload) => {
+    const subject = `Solicitação comercial - ${payload.interesse} - ${payload.nome}`;
     const body = [
       "Olá, equipe RRS System Technology!",
       "",
       "Gostaria de receber mais informações.",
       "",
-      `Nome: ${nome}`,
-      `Empresa: ${empresa}`,
-      `E-mail: ${email}`,
-      `Telefone: ${telefone}`,
-      `Interesse: ${interesse}`,
+      `Nome: ${payload.nome}`,
+      `Empresa: ${payload.empresa}`,
+      `E-mail: ${payload.email}`,
+      `Telefone: ${payload.telefone}`,
+      `Interesse: ${payload.interesse}`,
       "",
       "Necessidade:",
-      mensagem,
+      payload.mensagem,
       "",
       "Mensagem enviada pelo site institucional."
     ].join("\n");
@@ -155,9 +159,42 @@
     return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
+  const submitViaFormspree = async (endpoint, payload) => {
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        nome: payload.nome,
+        empresa: payload.empresa,
+        email: payload.email,
+        telefone: payload.telefone,
+        interesse: payload.interesse,
+        mensagem: payload.mensagem,
+        _replyto: payload.email,
+        _subject: `Solicitação comercial - ${payload.interesse} - ${payload.nome}`
+      })
+    });
+
+    if (!response.ok) {
+      throw new Error("Falha no envio pelo Formspree.");
+    }
+  };
+
   const setupForm = () => {
     const form = document.getElementById("contact-form");
     if (!form) return;
+
+    const helper = document.getElementById("form-helper");
+    const endpoint = normalizeText(form.getAttribute("data-formspree-endpoint"));
+
+    if (helper) {
+      helper.textContent = endpoint
+        ? "Sua solicitação será enviada diretamente para a equipe comercial."
+        : "O envio abrirá seu aplicativo de e-mail com a mensagem preenchida.";
+    }
 
     const phone = form.elements.namedItem("telefone");
     phone?.addEventListener("input", (event) => {
@@ -195,25 +232,55 @@
       });
     });
 
-    form.addEventListener("submit", (event) => {
+    form.addEventListener("submit", async (event) => {
       event.preventDefault();
       if (!validateForm(form)) return;
 
       const submitButton = form.querySelector(".submit-button");
       const label = submitButton?.querySelector("span");
       const originalLabel = label?.textContent ?? "Enviar solicitação";
+      const payload = getFormPayload(form);
 
       submitButton?.classList.add("is-loading");
-      if (label) label.textContent = "Preparando mensagem...";
 
-      const mailto = buildMailto(form);
-      showToast("Mensagem preparada. Finalize o envio no seu aplicativo de e-mail.");
-
-      window.setTimeout(() => {
-        window.location.href = mailto;
+      try {
+        if (endpoint) {
+          if (label) label.textContent = "Enviando...";
+          await submitViaFormspree(endpoint, payload);
+          form.reset();
+          clearFormErrors(form);
+          showToast("Solicitação enviada com sucesso. Em breve retornaremos o contato.");
+        } else {
+          if (label) label.textContent = "Preparando mensagem...";
+          showToast("Mensagem preparada. Finalize o envio no seu aplicativo de e-mail.");
+          window.setTimeout(() => {
+            window.location.href = buildMailto(payload);
+          }, 250);
+        }
+      } catch (error) {
+        console.error(error);
+        showToast("Não foi possível enviar agora. Tentando abrir seu e-mail...");
+        window.setTimeout(() => {
+          window.location.href = buildMailto(payload);
+        }, 400);
+      } finally {
         submitButton?.classList.remove("is-loading");
         if (label) label.textContent = originalLabel;
-      }, 250);
+      }
+    });
+  };
+
+  const setupCopyEmail = () => {
+    const button = document.getElementById("copy-email");
+    if (!button) return;
+
+    button.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(CONTACT_EMAIL);
+        showToast("E-mail comercial copiado.");
+      } catch {
+        showToast(CONTACT_EMAIL);
+      }
     });
   };
 
@@ -319,11 +386,13 @@
   window.addEventListener("scroll", setHeaderState, { passive: true });
   setHeaderState();
 
-  document.getElementById("current-year").textContent = String(new Date().getFullYear());
+  const yearEl = document.getElementById("current-year");
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
   setupReveal();
   setupActiveNavigation();
   setupProductLinks();
   setupImageFallbacks();
+  setupCopyEmail();
   setupForm();
 })();

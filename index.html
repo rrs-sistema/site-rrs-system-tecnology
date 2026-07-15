@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#07111f" />
+    <meta name="theme-color" content="#0A1620" />
     <meta name="color-scheme" content="light" />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta
@@ -16,6 +16,10 @@
       rel="canonical"
       href="https://rrs-sistema.github.io/site-rrs-system-tecnology/"
     />
+
+    <link rel="icon" href="assets/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
 
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
@@ -34,14 +38,14 @@
     />
     <meta
       property="og:image"
-      content="https://rrs-sistema.github.io/site-rrs-system-tecnology/assets/images/logotipo.jpg"
+      content="https://rrs-sistema.github.io/site-rrs-system-tecnology/assets/images/logotipo.webp"
     />
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -58,7 +62,7 @@
         "name": "RRS System Technology",
         "legalName": "RIVALDO ROBERTO DA SILVA LTDA",
         "url": "https://rrs-sistema.github.io/site-rrs-system-tecnology/",
-        "logo": "https://rrs-sistema.github.io/site-rrs-system-tecnology/assets/images/logotipo.jpg",
+        "logo": "https://rrs-sistema.github.io/site-rrs-system-tecnology/assets/images/logotipo.webp",
         "email": "comercial@rrssystem.com.br",
         "description": "Empresa de engenharia de software, aplicativos e sistemas de gestão para negócios.",
         "sameAs": [
@@ -77,13 +81,16 @@
       <div class="container header-inner">
         <a class="brand" href="#inicio" aria-label="RRS System Technology - início">
           <span class="brand-logo-shell" aria-hidden="true">
-            <img
-              src="assets/images/logotipo.jpg"
-              alt=""
-              class="brand-logo"
-              width="58"
-              height="58"
-            />
+            <picture>
+              <source srcset="assets/images/logotipo.webp" type="image/webp" />
+              <img
+                src="assets/images/logotipo.jpg"
+                alt=""
+                class="brand-logo"
+                width="58"
+                height="58"
+              />
+            </picture>
           </span>
           <span class="brand-copy">
             <strong>RRS System</strong>
@@ -118,94 +125,34 @@
 
     <main id="conteudo-principal">
       <section class="hero" id="inicio">
-        <div class="hero-grid-overlay" aria-hidden="true"></div>
-        <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
-        <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+        <div class="hero-media" aria-hidden="true">
+          <picture>
+            <source srcset="assets/images/hero-dashboard.webp" type="image/webp" />
+            <img
+              src="assets/images/dashboard.png"
+              alt=""
+              width="1920"
+              height="1032"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
+        </div>
+        <div class="hero-scrim" aria-hidden="true"></div>
 
-        <div class="container hero-layout">
-          <div class="hero-copy" data-reveal>
-            <div class="eyebrow">
-              <span class="eyebrow-dot"></span>
-              Engenharia de software para negócios reais
-            </div>
-
-            <h1>
-              Tecnologia que simplifica sua operação e
-              <span class="gradient-text">acelera seus resultados.</span>
-            </h1>
-
-            <p class="hero-description">
-              Desenvolvemos sistemas robustos, aplicativos e soluções de gestão
-              que conectam vendas, atendimento e operação em uma experiência
-              simples, segura e preparada para crescer.
-            </p>
-
-            <div class="hero-actions">
-              <a href="#contato" class="button button-primary">
-                Solicitar uma demonstração
-                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-              </a>
-              <a href="#produtos" class="button button-ghost">
-                Conhecer soluções
-              </a>
-            </div>
-
-            <ul class="hero-trust" aria-label="Diferenciais principais">
-              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Atendimento consultivo</li>
-              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Soluções multiplataforma</li>
-              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Arquitetura escalável</li>
-            </ul>
-          </div>
-
-          <div class="hero-visual" data-reveal data-reveal-delay="120">
-            <div class="showcase-halo" aria-hidden="true"></div>
-
-            <div class="showcase-browser">
-              <div class="browser-topbar">
-                <div class="browser-dots" aria-hidden="true">
-                  <span></span><span></span><span></span>
-                </div>
-                <div class="browser-address">reobote.app/dashboard</div>
-                <div class="browser-secure">
-                  <i class="fa-solid fa-lock" aria-hidden="true"></i>
-                </div>
-              </div>
-              <div class="showcase-media image-fallback" data-label="Reobote PDV">
-                <img
-                  src="assets/images/dashboard.png"
-                  alt="Painel de gestão do Reobote PDV"
-                  width="960"
-                  height="600"
-                  fetchpriority="high"
-                  decoding="async"
-                />
-              </div>
-            </div>
-
-            <div class="floating-card floating-card-sales">
-              <span class="floating-icon purple">
-                <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-              </span>
-              <div>
-                <small>Gestão integrada</small>
-                <strong>Dados em tempo real</strong>
-              </div>
-            </div>
-
-            <div class="floating-card floating-card-channel">
-              <span class="floating-icon teal">
-                <i class="fa-solid fa-signal" aria-hidden="true"></i>
-              </span>
-              <div>
-                <small>Operação resiliente</small>
-                <strong>Offline-first</strong>
-              </div>
-            </div>
-
-            <div class="floating-badge">
-              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
-              <span>Arquitetura segura</span>
-            </div>
+        <div class="container hero-content" data-reveal>
+          <p class="brand-mark">RRS System Technology</p>
+          <h1>Software que organiza a operação e libera o crescimento.</h1>
+          <p class="hero-description">
+            Sistemas de gestão, aplicativos e soluções sob medida para conectar
+            vendas, atendimento e rotina do dia a dia.
+          </p>
+          <div class="hero-actions">
+            <a href="#contato" class="button button-primary">
+              Solicitar demonstração
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#produtos" class="button button-ghost">Ver soluções</a>
           </div>
         </div>
       </section>
@@ -243,7 +190,7 @@
           </div>
 
           <div class="product-grid">
-            <article class="product-card product-pdv" data-reveal>
+            <article class="product-card product-pdv" id="reobote-pdv" data-reveal>
               <div class="product-card-top">
                 <span class="product-icon">
                   <i class="fa-solid fa-cash-register" aria-hidden="true"></i>
@@ -252,14 +199,17 @@
               </div>
 
               <div class="product-media image-fallback" data-label="Reobote PDV">
-                <img
-                  src="assets/images/dashboard.png"
-                  alt="Tela do sistema Reobote PDV"
-                  width="720"
-                  height="430"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <picture>
+                  <source srcset="assets/images/dashboard.webp" type="image/webp" />
+                  <img
+                    src="assets/images/dashboard.png"
+                    alt="Tela do sistema Reobote PDV"
+                    width="720"
+                    height="430"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
               </div>
 
               <div class="product-content">
@@ -280,7 +230,7 @@
               </div>
             </article>
 
-            <article class="product-card product-menu" data-reveal data-reveal-delay="90">
+            <article class="product-card product-menu" id="cardapio-digital" data-reveal data-reveal-delay="90">
               <div class="product-card-top">
                 <span class="product-icon">
                   <i class="fa-solid fa-utensils" aria-hidden="true"></i>
@@ -289,14 +239,17 @@
               </div>
 
               <div class="product-media image-fallback" data-label="Cardápio Digital">
-                <img
-                  src="assets/images/gerenciamento-comanda.png"
-                  alt="Tela do Reobote Cardápio Digital"
-                  width="720"
-                  height="430"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <picture>
+                  <source srcset="assets/images/gerenciamento-comanda.webp" type="image/webp" />
+                  <img
+                    src="assets/images/gerenciamento-comanda.png"
+                    alt="Tela do Reobote Cardápio Digital"
+                    width="720"
+                    height="430"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
               </div>
 
               <div class="product-content">
@@ -317,7 +270,7 @@
               </div>
             </article>
 
-            <article class="product-card product-os" data-reveal data-reveal-delay="180">
+            <article class="product-card product-os" id="ordem-de-servicos" data-reveal data-reveal-delay="180">
               <div class="product-card-top">
                 <span class="product-icon">
                   <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
@@ -326,14 +279,17 @@
               </div>
 
               <div class="product-media image-fallback" data-label="Ordem de Serviços">
-                <img
-                  src="assets/images/dashboard-de-ordem-servicos.png"
-                  alt="Painel do sistema de Ordem de Serviços"
-                  width="720"
-                  height="430"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <picture>
+                  <source srcset="assets/images/dashboard-de-ordem-servicos.webp" type="image/webp" />
+                  <img
+                    src="assets/images/dashboard-de-ordem-servicos.png"
+                    alt="Painel do sistema de Ordem de Serviços"
+                    width="720"
+                    height="430"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
               </div>
 
               <div class="product-content">
@@ -374,7 +330,7 @@
           </div>
 
           <div class="service-grid">
-            <article class="service-card" data-reveal>
+            <article class="service-item" data-reveal>
               <span class="service-number">01</span>
               <div class="service-icon">
                 <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
@@ -386,7 +342,7 @@
               </p>
             </article>
 
-            <article class="service-card" data-reveal data-reveal-delay="70">
+            <article class="service-item" data-reveal data-reveal-delay="70">
               <span class="service-number">02</span>
               <div class="service-icon">
                 <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
@@ -398,7 +354,7 @@
               </p>
             </article>
 
-            <article class="service-card" data-reveal data-reveal-delay="140">
+            <article class="service-item" data-reveal data-reveal-delay="140">
               <span class="service-number">03</span>
               <div class="service-icon">
                 <i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
@@ -410,7 +366,7 @@
               </p>
             </article>
 
-            <article class="service-card" data-reveal data-reveal-delay="210">
+            <article class="service-item" data-reveal data-reveal-delay="210">
               <span class="service-number">04</span>
               <div class="service-icon">
                 <i class="fa-solid fa-compass-drafting" aria-hidden="true"></i>
@@ -463,13 +419,9 @@
 
       <section class="section about-section" id="empresa">
         <div class="container about-layout">
-          <div class="about-panel" data-reveal>
-            <div class="about-panel-grid" aria-hidden="true"></div>
-            <div class="about-panel-content">
-              <span class="panel-chip">
-                <i class="fa-solid fa-code" aria-hidden="true"></i>
-                Engenharia aplicada ao negócio
-              </span>
+          <div class="about-visual" data-reveal>
+            <div class="about-visual-content">
+              <p class="about-brand">RRS System Technology</p>
               <h3>Menos complexidade para sua equipe. Mais controle para sua empresa.</h3>
               <p>
                 Tecnologia deve facilitar decisões, proteger a operação e criar
@@ -541,13 +493,13 @@
                   <strong>comercial@rrssystem.com.br</strong>
                 </div>
               </a>
-              <div>
-                <span><i class="fa-solid fa-clock" aria-hidden="true"></i></span>
+              <button type="button" class="contact-copy-email" id="copy-email">
+                <span><i class="fa-solid fa-copy" aria-hidden="true"></i></span>
                 <div>
-                  <small>Atendimento</small>
-                  <strong>Consultivo e personalizado</strong>
+                  <small>Atalho</small>
+                  <strong>Copiar e-mail</strong>
                 </div>
-              </div>
+              </button>
             </div>
 
             <div class="contact-note">
@@ -556,8 +508,12 @@
             </div>
           </div>
 
-          <div class="contact-form-card">
-            <form id="contact-form" novalidate>
+          <div class="contact-form-wrap">
+            <form
+              id="contact-form"
+              novalidate
+              data-formspree-endpoint=""
+            >
               <div class="form-grid">
                 <div class="field-group">
                   <label for="nome">Nome completo</label>
@@ -650,8 +606,9 @@
                 <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
               </button>
 
-              <p class="form-helper">
-                O envio abrirá seu aplicativo de e-mail com a mensagem preenchida.
+              <p class="form-helper" id="form-helper">
+                Sem endpoint configurado, o envio abre seu e-mail com a mensagem
+                preenchida. Para envio direto, informe um endpoint Formspree no formulário.
               </p>
             </form>
           </div>
@@ -664,12 +621,15 @@
         <div class="footer-brand">
           <a class="brand brand-footer" href="#inicio">
             <span class="brand-logo-shell" aria-hidden="true">
-              <img
-                src="assets/images/logotipo.jpg"
-                alt=""
-                width="58"
-                height="58"
-              />
+              <picture>
+                <source srcset="assets/images/logotipo.webp" type="image/webp" />
+                <img
+                  src="assets/images/logotipo.jpg"
+                  alt=""
+                  width="58"
+                  height="58"
+                />
+              </picture>
             </span>
             <span class="brand-copy">
               <strong>RRS System</strong>
@@ -713,9 +673,9 @@
 
         <div class="footer-column">
           <h2>Soluções</h2>
-          <a href="#produtos">Reobote PDV</a>
-          <a href="#produtos">Cardápio Digital</a>
-          <a href="#produtos">Ordem de Serviços</a>
+          <a href="#reobote-pdv">Reobote PDV</a>
+          <a href="#cardapio-digital">Cardápio Digital</a>
+          <a href="#ordem-de-servicos">Ordem de Serviços</a>
           <a href="#servicos">Desenvolvimento sob medida</a>
         </div>
 
