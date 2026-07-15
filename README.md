@@ -30,7 +30,15 @@ Endpoint configurado em `index.html`:
 data-formspree-endpoint="https://formspree.io/f/xpqvqapz"
 ```
 
-Se o envio direto falhar, o site tenta abrir o e-mail do visitante como fallback (`mailto`).
+## WhatsApp (opcional)
+
+Para exibir o botão de WhatsApp na seção de contato, preencha o atributo no `<body>`:
+
+```html
+<body data-whatsapp="5511999999999">
+```
+
+Use apenas dígitos (DDI + DDD + número). Se ficar vazio, o botão permanece oculto.
 
 ## Acesse o projeto
 
