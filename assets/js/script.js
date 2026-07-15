@@ -325,6 +325,81 @@
     });
   };
 
+  const setupImageLightbox = () => {
+    const lightbox = document.getElementById("image-lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+    const lightboxCaption = document.getElementById("lightbox-caption");
+    if (!lightbox || !lightboxImage) return;
+
+    let lastTrigger = null;
+
+    const closeLightbox = () => {
+      lightbox.hidden = true;
+      document.body.classList.remove("lightbox-open");
+      lightboxImage.removeAttribute("src");
+      if (lightboxCaption) lightboxCaption.textContent = "";
+      lastTrigger?.focus?.();
+      lastTrigger = null;
+    };
+
+    const openLightbox = (src, alt, trigger) => {
+      if (!src) return;
+      lastTrigger = trigger ?? null;
+      lightboxImage.src = src;
+      lightboxImage.alt = alt || "Tela ampliada do sistema";
+      if (lightboxCaption) lightboxCaption.textContent = alt || "";
+      lightbox.hidden = false;
+      document.body.classList.add("lightbox-open");
+      lightbox.querySelector(".lightbox-close")?.focus();
+    };
+
+    const decorateZoomTarget = (target, getImage) => {
+      if (!target || target.classList.contains("zoom-ready")) return;
+      target.classList.add("zoom-ready");
+      target.setAttribute("tabindex", "0");
+      target.setAttribute("role", "button");
+      target.setAttribute("aria-label", "Ampliar imagem");
+
+      if (!target.querySelector(".zoom-hint")) {
+        const hint = document.createElement("span");
+        hint.className = "zoom-hint";
+        hint.setAttribute("aria-hidden", "true");
+        hint.innerHTML = '<i class="fa-solid fa-magnifying-glass-plus"></i>';
+        target.appendChild(hint);
+      }
+
+      const activate = () => {
+        const image = getImage();
+        if (!image) return;
+        openLightbox(image.currentSrc || image.src, image.alt, target);
+      };
+
+      target.addEventListener("click", activate);
+      target.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          activate();
+        }
+      });
+    };
+
+    document.querySelectorAll(".product-gallery .product-media").forEach((media) => {
+      decorateZoomTarget(media, () => media.querySelector("img"));
+    });
+
+    document.querySelectorAll(".product-showcase-grid figure").forEach((figure) => {
+      decorateZoomTarget(figure, () => figure.querySelector("img"));
+    });
+
+    lightbox.querySelectorAll("[data-lightbox-close]").forEach((button) => {
+      button.addEventListener("click", closeLightbox);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !lightbox.hidden) closeLightbox();
+    });
+  };
+
   const setupProductLinks = () => {
     document.querySelectorAll("[data-product]").forEach((link) => {
       link.addEventListener("click", () => {
@@ -448,6 +523,7 @@
   setupActiveNavigation();
   setupProductLinks();
   setupProductGalleries();
+  setupImageLightbox();
   setupImageFallbacks();
   setupCopyEmail();
   setupWhatsApp();

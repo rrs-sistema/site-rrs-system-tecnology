@@ -993,6 +993,24 @@
       </div>
     </footer>
 
+    <div
+      class="lightbox"
+      id="image-lightbox"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-label="Visualização ampliada da tela"
+    >
+      <button type="button" class="lightbox-backdrop" data-lightbox-close aria-label="Fechar ampliação"></button>
+      <div class="lightbox-panel">
+        <button type="button" class="lightbox-close" data-lightbox-close aria-label="Fechar">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+        <img id="lightbox-image" src="" alt="" />
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+      </div>
+    </div>
+
     <div class="toast" id="site-toast" role="status" aria-live="polite" aria-atomic="true">
       <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
       <span></span>
