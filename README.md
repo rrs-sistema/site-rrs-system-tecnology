@@ -22,13 +22,15 @@ Construído com **HTML, CSS e JavaScript**, com foco em identidade própria, res
 
 ## Formulário de contato
 
-Por padrão, o formulário abre o e-mail do visitante com a mensagem preenchida (`mailto`).
+O formulário envia as solicitações pelo **Formspree** para `rrs.system.technology@gmail.com`.
 
-Para envio direto, configure o atributo `data-formspree-endpoint` no formulário em `index.html` com a URL do seu formulário Formspree:
+Endpoint configurado em `index.html`:
 
 ```html
-<form id="contact-form" data-formspree-endpoint="https://formspree.io/f/seu-id">
+data-formspree-endpoint="https://formspree.io/f/xpqvqapz"
 ```
+
+Se o envio direto falhar, o site tenta abrir o e-mail do visitante como fallback (`mailto`).
 
 ## Acesse o projeto
 
