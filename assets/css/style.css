@@ -1838,11 +1838,14 @@ ul {
     gap: 18px;
   }
 
-  .cardapio-showcase {
+  .cardapio-showcase,
+  .pdv-showcase,
+  .product-showcase {
     padding: 28px 20px;
   }
 
-  .cardapio-showcase-grid {
+  .cardapio-showcase-grid,
+  .product-showcase-grid {
     grid-template-columns: 1fr;
   }
 
