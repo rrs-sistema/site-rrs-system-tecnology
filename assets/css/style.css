@@ -734,7 +734,9 @@ ul {
   background: var(--product);
 }
 
-.cardapio-showcase {
+.cardapio-showcase,
+.pdv-showcase,
+.product-showcase {
   margin-top: 56px;
   padding: 36px;
   border: 1px solid var(--slate-200);
@@ -742,12 +744,19 @@ ul {
   background: var(--white);
 }
 
-.cardapio-showcase-copy {
+.pdv-showcase + .cardapio-showcase,
+.product-showcase + .product-showcase {
+  margin-top: 24px;
+}
+
+.cardapio-showcase-copy,
+.product-showcase-copy {
   max-width: 640px;
   margin-bottom: 28px;
 }
 
-.cardapio-showcase-copy h3 {
+.cardapio-showcase-copy h3,
+.product-showcase-copy h3 {
   margin: 0 0 12px;
   color: var(--ink);
   font-family: var(--font-display);
@@ -755,24 +764,28 @@ ul {
   letter-spacing: -0.03em;
 }
 
-.cardapio-showcase-copy p {
+.cardapio-showcase-copy p,
+.product-showcase-copy p {
   margin: 0;
   color: var(--slate-500);
   font-size: 0.95rem;
   line-height: 1.7;
 }
 
-.cardapio-showcase-grid {
+.cardapio-showcase-grid,
+.product-showcase-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
-.cardapio-showcase-grid figure {
+.cardapio-showcase-grid figure,
+.product-showcase-grid figure {
   margin: 0;
 }
 
-.cardapio-showcase-grid img {
+.cardapio-showcase-grid img,
+.product-showcase-grid img {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -783,7 +796,8 @@ ul {
   background: var(--ink);
 }
 
-.cardapio-showcase-grid figcaption {
+.cardapio-showcase-grid figcaption,
+.product-showcase-grid figcaption {
   margin-top: 10px;
   color: var(--slate-600);
   font-size: 0.8rem;
@@ -1824,11 +1838,14 @@ ul {
     gap: 18px;
   }
 
-  .cardapio-showcase {
+  .cardapio-showcase,
+  .pdv-showcase,
+  .product-showcase {
     padding: 28px 20px;
   }
 
-  .cardapio-showcase-grid {
+  .cardapio-showcase-grid,
+  .product-showcase-grid {
     grid-template-columns: 1fr;
   }
 
