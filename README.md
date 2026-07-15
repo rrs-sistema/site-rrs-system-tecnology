@@ -38,15 +38,14 @@ O botão de WhatsApp na seção de contato usa o número **(41) 99208-8544**:
 <body data-whatsapp="5541992088544">
 ```
 
-## Telas do Cardápio Digital
+## Telas dos produtos
 
-As capturas reais do produto estão em `assets/images/`:
+Capturas reais em `assets/images/`:
 
-- `cardapio-mesas.png` / `.webp`
-- `cardapio-pedidos.png` / `.webp`
-- `cardapio-entregadores.png` / `.webp`
+**Cardápio Digital:** `cardapio-mesas`, `cardapio-pedidos`, `cardapio-entregadores`  
+**Reobote PDV:** `tela-pdv`, `monitor-venda`, `desempenho-venda-diaria`
 
-Elas aparecem na galeria do card do produto e na vitrine abaixo da seção de produtos.
+Cada produto tem galeria com abas no card e uma vitrine abaixo da seção de produtos.
 
 ## Acesse o projeto
 
