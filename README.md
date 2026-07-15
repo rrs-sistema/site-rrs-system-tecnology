@@ -18,7 +18,7 @@ Construído com **HTML, CSS e JavaScript**, com foco em identidade própria, res
 - CSS3
 - JavaScript
 - Font Awesome
-- Google Fonts (Syne + Manrope)
+- Google Fonts (Sora + Manrope)
 
 ## Formulário de contato
 
