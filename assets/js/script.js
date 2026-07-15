@@ -192,7 +192,7 @@
 
     if (helper) {
       helper.textContent = endpoint
-        ? "Sua solicitação será enviada diretamente para a equipe comercial."
+        ? "Sua solicitação será enviada diretamente para a equipe comercial. Retorno em até 1 dia útil."
         : "O envio abrirá seu aplicativo de e-mail com a mensagem preenchida.";
     }
 
@@ -268,6 +268,19 @@
         if (label) label.textContent = originalLabel;
       }
     });
+  };
+
+  const setupWhatsApp = () => {
+    const number = normalizeText(document.body.getAttribute("data-whatsapp")).replace(/\D/g, "");
+    const link = document.getElementById("whatsapp-link");
+    if (!link || number.length < 10) return;
+
+    const message = encodeURIComponent(
+      "Olá! Vim pelo site da RRS System Technology e gostaria de saber mais sobre as soluções."
+    );
+    link.href = `https://wa.me/${number}?text=${message}`;
+    link.hidden = false;
+    link.classList.remove("is-hidden");
   };
 
   const setupCopyEmail = () => {
@@ -408,6 +421,7 @@
   setupProductLinks();
   setupImageFallbacks();
   setupCopyEmail();
+  setupWhatsApp();
   setupForm();
   setupBackToTop();
 })();

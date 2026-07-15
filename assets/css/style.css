@@ -421,10 +421,10 @@ ul {
 .hero h1 {
   margin-bottom: 18px;
   font-family: var(--font-display);
-  font-size: clamp(2.1rem, 4.4vw, 3.35rem);
+  font-size: clamp(1.85rem, 4vw, 3rem);
   font-weight: 700;
   letter-spacing: -0.025em;
-  line-height: 1.15;
+  line-height: 1.18;
 }
 
 .hero-description {
@@ -439,6 +439,12 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.hero-note {
+  margin: 22px 0 0;
+  color: #9db0be;
+  font-size: 0.88rem;
 }
 
 .button {
@@ -518,12 +524,12 @@ ul {
 
 .metrics-grid {
   display: grid;
-  grid-template-columns: 0.8fr 0.8fr 1.3fr 1.2fr;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .metric {
   min-height: 132px;
-  padding: 28px 30px;
+  padding: 28px 22px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -535,11 +541,12 @@ ul {
 }
 
 .metric strong {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   color: var(--ink);
   font-family: var(--font-display);
-  font-size: clamp(1.35rem, 2.1vw, 2rem);
-  letter-spacing: -0.04em;
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  letter-spacing: -0.03em;
+  line-height: 1.25;
 }
 
 .metric span {
@@ -727,7 +734,7 @@ ul {
 }
 
 .product-content ul {
-  margin-bottom: 26px;
+  margin-bottom: 18px;
   display: grid;
   gap: 11px;
   list-style: none;
@@ -745,6 +752,25 @@ ul {
   margin-top: 5px;
   color: var(--product);
   font-size: 0.7rem;
+}
+
+.product-insights {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 22px;
+  padding: 14px 0 0;
+  border-top: 1px solid var(--slate-200);
+}
+
+.product-insights p {
+  margin: 0;
+  color: var(--slate-600);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.product-insights strong {
+  color: var(--ink);
 }
 
 .product-link {
@@ -775,6 +801,65 @@ ul {
 
 .product-link:hover i {
   transform: translateX(4px);
+}
+
+/* Audience / scenarios */
+.audience-section {
+  background: var(--white);
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.audience-card {
+  padding: 28px 24px;
+  border-top: 3px solid var(--brand);
+  background: var(--slate-50);
+}
+
+.audience-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--brand);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.audience-card h3 {
+  margin-bottom: 12px;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+
+.audience-card > p {
+  margin-bottom: 14px;
+  color: var(--slate-500);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.audience-result {
+  margin-bottom: 20px !important;
+  padding-top: 12px;
+  border-top: 1px solid var(--slate-200);
+  color: var(--slate-700) !important;
+  font-size: 0.84rem !important;
+}
+
+.audience-result strong {
+  color: var(--ink);
+}
+
+.audience-card .text-link {
+  margin-top: 0;
 }
 
 /* Services — list-like, not heavy cards */
@@ -1109,6 +1194,23 @@ ul {
   color: #aebfcb;
 }
 
+.contact-copy > p strong {
+  color: #dff3f0;
+  font-weight: 700;
+}
+
+.demo-steps {
+  margin: 28px 0 0;
+  padding-left: 1.15rem;
+  color: #b7c7d2;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.demo-steps li + li {
+  margin-top: 6px;
+}
+
 .contact-channels {
   display: grid;
   gap: 14px;
@@ -1130,6 +1232,16 @@ ul {
   text-align: left;
   cursor: pointer;
   transition: border-color var(--ease), background var(--ease), transform var(--ease);
+}
+
+.contact-channels > a.is-hidden,
+.contact-whatsapp[hidden] {
+  display: none;
+}
+
+.contact-whatsapp span {
+  color: #6fe3a1 !important;
+  background: rgba(37, 211, 102, 0.16) !important;
 }
 
 .contact-channels > a:hover,
@@ -1496,6 +1608,10 @@ ul {
     gap: 18px;
   }
 
+  .audience-grid {
+    grid-template-columns: 1fr;
+  }
+
   .services-layout,
   .about-layout {
     gap: 54px;
@@ -1605,6 +1721,11 @@ ul {
 
   .product-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .audience-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   .product-card:last-child {
