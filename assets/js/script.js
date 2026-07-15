@@ -297,6 +297,34 @@
     });
   };
 
+  const setupProductGalleries = () => {
+    document.querySelectorAll("[data-product-gallery]").forEach((gallery) => {
+      const image = gallery.querySelector("[data-gallery-img]");
+      const webp = gallery.querySelector("[data-gallery-webp]");
+      const tabs = [...gallery.querySelectorAll(".gallery-tabs button")];
+      if (!image || !tabs.length) return;
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const src = tab.getAttribute("data-src");
+          const webpSrc = tab.getAttribute("data-webp");
+          const alt = tab.getAttribute("data-alt");
+          if (!src) return;
+
+          if (webp && webpSrc) webp.setAttribute("srcset", webpSrc);
+          image.setAttribute("src", src);
+          if (alt) image.setAttribute("alt", alt);
+
+          tabs.forEach((item) => {
+            const active = item === tab;
+            item.classList.toggle("is-active", active);
+            item.setAttribute("aria-selected", String(active));
+          });
+        });
+      });
+    });
+  };
+
   const setupProductLinks = () => {
     document.querySelectorAll("[data-product]").forEach((link) => {
       link.addEventListener("click", () => {
@@ -419,6 +447,7 @@
   setupReveal();
   setupActiveNavigation();
   setupProductLinks();
+  setupProductGalleries();
   setupImageFallbacks();
   setupCopyEmail();
   setupWhatsApp();

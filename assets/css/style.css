@@ -694,6 +694,102 @@ ul {
   transform: scale(1.03);
 }
 
+.product-gallery {
+  margin-inline: 22px;
+  display: grid;
+  gap: 10px;
+}
+
+.product-gallery .product-media {
+  margin-inline: 0;
+}
+
+.product-card:hover .product-gallery .product-media img {
+  transform: none;
+}
+
+.gallery-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.gallery-tabs button {
+  min-height: 34px;
+  padding: 6px 8px;
+  border: 1px solid var(--slate-200);
+  border-radius: 10px;
+  color: var(--slate-600);
+  background: var(--slate-50);
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color var(--ease), background var(--ease), border-color var(--ease);
+}
+
+.gallery-tabs button.is-active,
+.gallery-tabs button:hover {
+  color: var(--white);
+  border-color: var(--product);
+  background: var(--product);
+}
+
+.cardapio-showcase {
+  margin-top: 56px;
+  padding: 36px;
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+}
+
+.cardapio-showcase-copy {
+  max-width: 640px;
+  margin-bottom: 28px;
+}
+
+.cardapio-showcase-copy h3 {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  letter-spacing: -0.03em;
+}
+
+.cardapio-showcase-copy p {
+  margin: 0;
+  color: var(--slate-500);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.cardapio-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.cardapio-showcase-grid figure {
+  margin: 0;
+}
+
+.cardapio-showcase-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top center;
+  border: 1px solid var(--slate-200);
+  border-radius: 14px;
+  background: var(--ink);
+}
+
+.cardapio-showcase-grid figcaption {
+  margin-top: 10px;
+  color: var(--slate-600);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 .image-fallback::after {
   content: attr(data-label);
   position: absolute;
@@ -1728,6 +1824,14 @@ ul {
     gap: 18px;
   }
 
+  .cardapio-showcase {
+    padding: 28px 20px;
+  }
+
+  .cardapio-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
   .product-card:last-child {
     grid-column: 1 / -1;
     width: calc(50% - 9px);
@@ -1836,6 +1940,10 @@ ul {
 
   .product-grid {
     grid-template-columns: 1fr;
+  }
+
+  .product-gallery {
+    margin-inline: 20px;
   }
 
   .product-card:last-child {
