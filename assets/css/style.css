@@ -27,7 +27,7 @@
   --shadow-sm: 0 8px 24px rgba(10, 22, 32, 0.06);
   --shadow-md: 0 18px 40px rgba(10, 22, 32, 0.1);
   --ease: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  --font-display: "Syne", "Avenir Next", sans-serif;
+  --font-display: "Sora", "Avenir Next", sans-serif;
   --font-body: "Manrope", "Segoe UI", sans-serif;
 }
 
@@ -421,10 +421,10 @@ ul {
 .hero h1 {
   margin-bottom: 18px;
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 4.8vw, 3.6rem);
-  font-weight: 800;
-  letter-spacing: -0.045em;
-  line-height: 1.08;
+  font-size: clamp(2.1rem, 4.4vw, 3.35rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
 }
 
 .hero-description {
@@ -578,10 +578,10 @@ ul {
   margin-bottom: 18px;
   color: var(--ink);
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 3.05rem);
-  font-weight: 800;
-  letter-spacing: -0.045em;
-  line-height: 1.15;
+  font-size: clamp(1.9rem, 3.6vw, 2.85rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
 }
 
 .section-heading p,
@@ -1573,9 +1573,8 @@ ul {
   }
 
   .hero {
-    min-height: 78vh;
-    padding: 130px 0 72px;
-    align-items: center;
+    min-height: min(82vh, 640px);
+    padding: 118px 0 64px;
   }
 
   .hero-content {
@@ -1660,11 +1659,15 @@ ul {
 
   .hero {
     min-height: auto;
-    padding: 120px 0 70px;
+    padding: 118px 0 64px;
+  }
+
+  .hero-media img {
+    filter: blur(4px) saturate(0.55) brightness(0.4);
   }
 
   .hero h1 {
-    font-size: clamp(2.15rem, 10vw, 3rem);
+    font-size: clamp(2rem, 9.5vw, 2.85rem);
   }
 
   .hero-actions {
