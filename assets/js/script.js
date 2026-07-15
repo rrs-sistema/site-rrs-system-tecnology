@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const CONTACT_EMAIL = "comercial@rrssystem.com.br";
+  const CONTACT_EMAIL = "rrs.system.technology@gmail.com";
   const header = document.querySelector(".site-header");
   const menuToggle = document.querySelector(".menu-toggle");
   const mainNav = document.querySelector(".main-nav");
