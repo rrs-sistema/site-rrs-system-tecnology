@@ -2209,10 +2209,9 @@ body.lightbox-open {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .lightbox-panel {
-    animation: none;
+  html {
+    scroll-behavior: auto;
   }
-}
 
   *,
   *::before,
@@ -2226,6 +2225,10 @@ body.lightbox-open {
   .hero-media img {
     animation: none;
     transform: none;
+  }
+
+  .lightbox-panel {
+    animation: none;
   }
 
   [data-reveal] {
