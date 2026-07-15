@@ -250,18 +250,58 @@
                 <span class="product-category">Restaurantes e delivery</span>
               </div>
 
-              <div class="product-media image-fallback" data-label="Cardápio Digital">
-                <picture>
-                  <source srcset="assets/images/gerenciamento-comanda.webp" type="image/webp" />
-                  <img
-                    src="assets/images/gerenciamento-comanda.png"
-                    alt="Tela do Reobote Cardápio Digital"
-                    width="720"
-                    height="430"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </picture>
+              <div class="product-gallery" data-product-gallery>
+                <div class="product-media image-fallback" data-label="Cardápio Digital">
+                  <picture>
+                    <source
+                      data-gallery-webp
+                      srcset="assets/images/cardapio-mesas.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      data-gallery-img
+                      src="assets/images/cardapio-mesas.png"
+                      alt="Mapa de comandas e mesas do Reobote Cardápio Digital"
+                      width="720"
+                      height="430"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </div>
+                <div class="gallery-tabs" role="tablist" aria-label="Telas do Cardápio Digital">
+                  <button
+                    type="button"
+                    class="is-active"
+                    role="tab"
+                    aria-selected="true"
+                    data-webp="assets/images/cardapio-mesas.webp"
+                    data-src="assets/images/cardapio-mesas.png"
+                    data-alt="Mapa de comandas e mesas do Reobote Cardápio Digital"
+                  >
+                    Mesas
+                  </button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    data-webp="assets/images/cardapio-pedidos.webp"
+                    data-src="assets/images/cardapio-pedidos.png"
+                    data-alt="Gestão de pedidos em tempo real do Cardápio Digital"
+                  >
+                    Pedidos
+                  </button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    data-webp="assets/images/cardapio-entregadores.webp"
+                    data-src="assets/images/cardapio-entregadores.png"
+                    data-alt="Central de gestão de entregadores do Cardápio Digital"
+                  >
+                    Entregas
+                  </button>
+                </div>
               </div>
 
               <div class="product-content">
@@ -331,6 +371,61 @@
                 </a>
               </div>
             </article>
+          </div>
+
+          <div class="cardapio-showcase" data-reveal>
+            <div class="cardapio-showcase-copy">
+              <span class="section-kicker">Reobote Cardápio Digital</span>
+              <h3>Salão, cozinha e entrega no mesmo sistema</h3>
+              <p>
+                Telas reais da operação: mapa de mesas, fila de pedidos e gestão
+                de entregadores — com dados de uso, não painel vazio.
+              </p>
+            </div>
+            <div class="cardapio-showcase-grid">
+              <figure>
+                <picture>
+                  <source srcset="assets/images/cardapio-mesas.webp" type="image/webp" />
+                  <img
+                    src="assets/images/cardapio-mesas.png"
+                    alt="Comandas e mesas em tempo real"
+                    width="960"
+                    height="520"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <figcaption>Comandas e mesas</figcaption>
+              </figure>
+              <figure>
+                <picture>
+                  <source srcset="assets/images/cardapio-pedidos.webp" type="image/webp" />
+                  <img
+                    src="assets/images/cardapio-pedidos.png"
+                    alt="Gestão de pedidos da cozinha à entrega"
+                    width="960"
+                    height="520"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <figcaption>Gestão de pedidos</figcaption>
+              </figure>
+              <figure>
+                <picture>
+                  <source srcset="assets/images/cardapio-entregadores.webp" type="image/webp" />
+                  <img
+                    src="assets/images/cardapio-entregadores.png"
+                    alt="Central de entregadores e acertos"
+                    width="960"
+                    height="520"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <figcaption>Entregadores</figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </section>
