@@ -366,6 +366,20 @@
     sections.forEach((section) => observer.observe(section));
   };
 
+  const setupBackToTop = () => {
+    document.querySelectorAll("[data-back-to-top]").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        if (history.replaceState) {
+          history.replaceState(null, "", "#inicio");
+        } else {
+          window.location.hash = "inicio";
+        }
+      });
+    });
+  };
+
   menuToggle?.addEventListener("click", toggleMenu);
   navLinks.forEach((link) => link.addEventListener("click", closeMenu));
 
@@ -395,4 +409,5 @@
   setupImageFallbacks();
   setupCopyEmail();
   setupForm();
+  setupBackToTop();
 })();
