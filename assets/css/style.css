@@ -1271,7 +1271,6 @@ ul {
   color: var(--slate-500);
   font-size: 0.74rem;
   line-height: 1.55;
-  cursor: pointer;
 }
 
 .consent-field input {
@@ -1279,11 +1278,22 @@ ul {
   height: 17px;
   margin-top: 2px;
   accent-color: var(--brand);
+  cursor: pointer;
+}
+
+.consent-text {
+  margin: 0;
 }
 
 .consent-field a {
   color: var(--brand);
   font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.consent-field a:hover {
+  color: var(--brand-strong);
 }
 
 .consent-error {
