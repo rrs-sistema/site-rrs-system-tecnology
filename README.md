@@ -30,15 +30,23 @@ Endpoint configurado em `index.html`:
 data-formspree-endpoint="https://formspree.io/f/xpqvqapz"
 ```
 
-## WhatsApp (opcional)
+## WhatsApp
 
-Para exibir o botão de WhatsApp na seção de contato, preencha o atributo no `<body>`:
+O botão de WhatsApp na seção de contato usa o número **(41) 99208-8544**:
 
 ```html
-<body data-whatsapp="5511999999999">
+<body data-whatsapp="5541992088544">
 ```
 
-Use apenas dígitos (DDI + DDD + número). Se ficar vazio, o botão permanece oculto.
+## Telas do Cardápio Digital (pendente)
+
+Para substituir as capturas antigas, adicione estes arquivos em `assets/images/`:
+
+1. `cardapio-mesas.png` — Comandas e Mesas  
+2. `cardapio-pedidos.png` — Gestão de Pedidos  
+3. `cardapio-entregadores.png` — Central de Entregadores  
+
+Depois disso, a galeria do produto pode ser ligada no site.
 
 ## Acesse o projeto
 
