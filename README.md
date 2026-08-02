@@ -7,6 +7,7 @@ Construído com **HTML, CSS e JavaScript**, com foco em identidade própria, res
 ## Principais funcionalidades
 
 - Apresentação dos produtos Reobote (PDV, Cardápio Digital e Ordem de Serviços)
+- Páginas de detalhe por produto, com download da versão de teste (PDV e Cardápio Digital)
 - Divulgação de desenvolvimento sob medida, integrações e consultoria
 - Formulário de contato com validação e suporte a Formspree
 - Páginas de Política de Privacidade e Exclusão de Dados
@@ -46,6 +47,19 @@ Capturas reais em `assets/images/`:
 **Reobote PDV:** `tela-pdv`, `monitor-venda`, `desempenho-venda-diaria`
 
 Cada produto tem galeria com abas no card e uma vitrine abaixo da seção de produtos.
+
+## Páginas de produto
+
+- `produto-reobote-pdv.html`
+- `produto-cardapio-digital.html`
+- `produto-ordem-de-servicos.html`
+
+PDV e Cardápio Digital incluem link para baixar o instalador de teste em `assets/downloads/`:
+
+- `Reobote-PDV-Setup.exe`
+- `Reobote-Cardapio-Digital-Setup.exe`
+
+Coloque os executáveis nessa pasta com os nomes acima (veja `assets/downloads/README.md`).
 
 ## Acesse o projeto
 

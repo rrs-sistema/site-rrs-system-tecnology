@@ -5,12 +5,23 @@
   const header = document.querySelector(".site-header");
   const menuToggle = document.querySelector(".menu-toggle");
   const mainNav = document.querySelector(".main-nav");
-  const navLinks = [...document.querySelectorAll('.main-nav a[href^="#"]')];
+  const navLinks = [...document.querySelectorAll(".main-nav a")];
+  const sectionNavLinks = navLinks.filter((link) => {
+    const href = link.getAttribute("href") || "";
+    return href.startsWith("#") || href.includes(".html#");
+  });
   const sections = [...document.querySelectorAll("main section[id]")];
   const toast = document.getElementById("site-toast");
   let toastTimer;
 
+  const productHero = document.querySelector(".product-hero");
+
   const setHeaderState = () => {
+    if (productHero) {
+      const threshold = Math.max(24, productHero.offsetHeight - 120);
+      header?.classList.toggle("is-scrolled", window.scrollY > threshold);
+      return;
+    }
     header?.classList.toggle("is-scrolled", window.scrollY > 20);
   };
 
@@ -387,9 +398,17 @@
       decorateZoomTarget(media, () => media.querySelector("img"));
     });
 
-    document.querySelectorAll(".product-showcase-grid figure").forEach((figure) => {
-      decorateZoomTarget(figure, () => figure.querySelector("img"));
-    });
+    document
+      .querySelectorAll(".product-showcase-grid figure, .product-screens-grid figure")
+      .forEach((figure) => {
+        decorateZoomTarget(figure, () => figure.querySelector("img"));
+      });
+
+    document
+      .querySelectorAll(".product-screens-panel > .product-media")
+      .forEach((media) => {
+        decorateZoomTarget(media, () => media.querySelector("img"));
+      });
 
     lightbox.querySelectorAll("[data-lightbox-close]").forEach((button) => {
       button.addEventListener("click", closeLightbox);
@@ -400,17 +419,30 @@
     });
   };
 
+  const setInterestValue = (product) => {
+    const select = document.getElementById("interesse");
+    if (!select || !product) return false;
+
+    const option = [...select.options].find((item) => item.value === product);
+    if (!option) return false;
+
+    select.value = product;
+    return true;
+  };
+
   const setupProductLinks = () => {
     document.querySelectorAll("[data-product]").forEach((link) => {
       link.addEventListener("click", () => {
-        const product = link.getAttribute("data-product");
-        const select = document.getElementById("interesse");
-        if (!select || !product) return;
-
-        const option = [...select.options].find((item) => item.value === product);
-        if (option) select.value = product;
+        setInterestValue(link.getAttribute("data-product"));
       });
     });
+  };
+
+  const setupInterestFromQuery = () => {
+    const params = new URLSearchParams(window.location.search);
+    const interest = normalizeText(params.get("interesse"));
+    if (!interest) return;
+    setInterestValue(interest);
   };
 
   const setupImageFallbacks = () => {
@@ -472,8 +504,10 @@
 
         if (!visible) return;
         const id = visible.target.id;
-        navLinks.forEach((link) => {
-          link.classList.toggle("is-active", link.getAttribute("href") === `#${id}`);
+        sectionNavLinks.forEach((link) => {
+          const href = link.getAttribute("href") || "";
+          const isActive = href === `#${id}` || href.endsWith(`#${id}`);
+          link.classList.toggle("is-active", isActive);
         });
       },
       { rootMargin: "-25% 0px -55%", threshold: [0.08, 0.2, 0.45] }
@@ -522,6 +556,7 @@
   setupReveal();
   setupActiveNavigation();
   setupProductLinks();
+  setupInterestFromQuery();
   setupProductGalleries();
   setupImageLightbox();
   setupImageFallbacks();
