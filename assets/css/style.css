@@ -405,8 +405,15 @@ ul {
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 680px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.72fr);
+  align-items: end;
+  gap: 64px;
   animation: brandIn 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-copy {
+  max-width: 720px;
 }
 
 .brand-mark {
@@ -428,7 +435,7 @@ ul {
 }
 
 .hero-description {
-  max-width: 520px;
+  max-width: 620px;
   margin-bottom: 30px;
   color: #c5d3dc;
   font-size: clamp(1rem, 1.4vw, 1.12rem);
@@ -445,6 +452,49 @@ ul {
   margin: 22px 0 0;
   color: #9db0be;
   font-size: 0.88rem;
+}
+
+.hero-value-panel {
+  width: 100%;
+  padding: 24px;
+  border: 1px solid rgba(197, 211, 220, 0.22);
+  border-radius: 16px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.035)),
+    rgba(10, 22, 32, 0.46);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(14px);
+}
+
+.hero-panel-label {
+  margin: 0 0 14px;
+  color: #9fd8d2;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero-value-panel article {
+  display: grid;
+  gap: 6px;
+  padding: 18px 0;
+  border-top: 1px solid rgba(197, 211, 220, 0.16);
+}
+
+.hero-value-panel article:first-of-type {
+  border-top: 0;
+}
+
+.hero-value-panel strong {
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.hero-value-panel span {
+  color: #c5d3dc;
+  font-size: 0.93rem;
+  line-height: 1.55;
 }
 
 .button {
@@ -2202,7 +2252,35 @@ body.lightbox-open {
   }
 
   .hero-content {
+    grid-template-columns: 1fr;
+    gap: 34px;
     text-align: left;
+  }
+
+  .hero-copy {
+    max-width: 760px;
+  }
+
+  .hero-value-panel {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    padding: 20px;
+  }
+
+  .hero-panel-label {
+    grid-column: 1 / -1;
+  }
+
+  .hero-value-panel article {
+    padding: 12px 16px;
+    border-top: 0;
+    border-left: 1px solid rgba(197, 211, 220, 0.16);
+  }
+
+  .hero-value-panel article:first-of-type {
+    border-left: 0;
+    padding-left: 0;
   }
 
   .metrics-grid {
@@ -2319,12 +2397,33 @@ body.lightbox-open {
   }
 
   .hero h1 {
-    font-size: clamp(2rem, 9.5vw, 2.85rem);
+    font-size: 2.15rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
   }
 
   .hero-actions {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .hero-value-panel {
+    grid-template-columns: 1fr;
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .hero-value-panel article,
+  .hero-value-panel article:first-of-type {
+    padding: 14px 0;
+    border-left: 0;
+    border-top: 1px solid rgba(197, 211, 220, 0.16);
+  }
+
+  .hero-value-panel article:first-of-type {
+    border-top: 0;
   }
 
   .button {
