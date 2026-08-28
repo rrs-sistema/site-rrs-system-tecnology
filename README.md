@@ -12,6 +12,7 @@ Construído com **HTML, CSS e JavaScript**, com foco em identidade própria, res
 - Formulário de contato com validação e suporte a Formspree
 - Páginas de Política de Privacidade e Exclusão de Dados
 - Página de licenças e políticas específicas por sistema/aplicativo
+- Termos de Uso, Política de Suporte e Central de Ajuda
 - Layout responsivo com assets otimizados (WebP + favicon)
 
 ## Tecnologias
@@ -58,6 +59,9 @@ Cada produto tem galeria com abas no card e uma vitrine abaixo da seção de pro
 ## Páginas legais
 
 - `licencas.html`
+- `termos-de-uso.html`
+- `politica-de-suporte.html`
+- `central-de-ajuda.html`
 - `politica-de-privacidade.html`
 - `politica-reobote-pdv.html`
 - `politica-cardapio-digital.html`
