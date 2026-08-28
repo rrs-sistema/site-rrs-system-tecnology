@@ -6,8 +6,8 @@ Construído com **HTML, CSS e JavaScript**, com foco em identidade própria, res
 
 ## Principais funcionalidades
 
-- Apresentação dos produtos Reobote (PDV, Cardápio Digital e Ordem de Serviços)
-- Páginas de detalhe por produto, com solicitação de versão de teste (PDV e Cardápio Digital)
+- Apresentação dos produtos Reobote (PDV, Pedido Digital e Ordem de Serviços)
+- Páginas de detalhe por produto, com solicitação de versão de teste (PDV e Pedido Digital)
 - Divulgação de desenvolvimento sob medida, integrações e consultoria
 - Formulário de contato com validação e suporte a Formspree
 - Páginas de Política de Privacidade e Exclusão de Dados
@@ -45,7 +45,7 @@ O botão de WhatsApp na seção de contato usa o número **(41) 99208-8544**:
 
 Capturas reais em `assets/images/`:
 
-**Cardápio Digital:** `cardapio-mesas`, `cardapio-pedidos`, `cardapio-entregadores`  
+**Pedido Digital:** `cardapio-mesas`, `cardapio-pedidos`, `cardapio-entregadores`  
 **Reobote PDV:** `tela-pdv`, `monitor-venda`, `desempenho-venda-diaria`
 
 Cada produto tem galeria com abas no card e uma vitrine abaixo da seção de produtos.
@@ -68,7 +68,7 @@ Cada produto tem galeria com abas no card e uma vitrine abaixo da seção de pro
 - `politica-ordem-servicos.html`
 - `exclusao-de-dados.html`
 
-PDV e Cardápio Digital incluem uma seção para solicitar versão de teste. Quando os instaladores forem publicados em `assets/downloads/`, use estes nomes:
+PDV e Pedido Digital incluem uma seção para solicitar versão de teste. Quando os instaladores forem publicados em `assets/downloads/`, use estes nomes:
 
 - `Reobote-PDV-Setup.exe`
 - `Reobote-Cardapio-Digital-Setup.exe`
