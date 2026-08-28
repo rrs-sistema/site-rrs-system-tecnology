@@ -200,6 +200,77 @@ a {
   margin: 24px 0;
 }
 
+.legal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 28px 0;
+}
+
+.legal-card {
+  padding: 22px;
+  border: 1px solid var(--slate-200);
+  border-radius: 14px;
+  background: var(--slate-50);
+}
+
+.legal-card h2 {
+  margin-top: 0;
+}
+
+.legal-card p {
+  font-size: 0.92rem;
+}
+
+.legal-card a {
+  color: var(--brand-strong);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.license-screen {
+  margin: 34px 0;
+  padding: clamp(24px, 4vw, 34px);
+  border: 1px solid var(--slate-200);
+  border-radius: 16px;
+  background:
+    linear-gradient(135deg, rgba(15, 122, 114, 0.06), rgba(232, 239, 232, 0.56)),
+    var(--white);
+}
+
+.license-screen h2 {
+  margin-top: 0;
+}
+
+.license-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.license-meta div {
+  padding: 14px;
+  border: 1px solid var(--slate-200);
+  border-radius: 12px;
+  background: var(--white);
+}
+
+.license-meta strong,
+.license-meta span {
+  display: block;
+}
+
+.license-meta strong {
+  color: var(--ink);
+  font-size: 0.78rem;
+}
+
+.license-meta span {
+  color: var(--slate-500);
+  font-size: 0.76rem;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -259,5 +330,10 @@ a {
 
   .button {
     width: 100%;
+  }
+
+  .legal-grid,
+  .license-meta {
+    grid-template-columns: 1fr;
   }
 }
