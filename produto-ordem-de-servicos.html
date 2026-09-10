@@ -8,7 +8,7 @@
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta
       name="description"
-      content="Ordem de Serviços: organize equipamentos, técnicos, etapas e históricos. Solicite uma demonstração com a RRS System Technology."
+      content="Ordem de Serviços: orçamentos, OS, agenda, veículos e recebíveis. Solicite uma demonstração com a RRS System Technology."
     />
     <title>Ordem de Serviços | RRS System Technology</title>
     <link
@@ -24,7 +24,7 @@
     <meta property="og:title" content="Ordem de Serviços | RRS System Technology" />
     <meta
       property="og:description"
-      content="Organize equipamentos, técnicos, etapas, históricos e indicadores para mais controle e previsibilidade."
+      content="Organize orçamentos, OS, agenda, veículos e recebíveis para mais controle e previsibilidade na oficina."
     />
     <meta
       property="og:url"
@@ -131,8 +131,8 @@
           </p>
           <h1>Ordem de Serviços</h1>
           <p class="product-hero-lead">
-            Organize equipamentos, técnicos, etapas, históricos e indicadores
-            para entregar mais controle e previsibilidade.
+            Organize orçamentos, OS, agenda, veículos e recebíveis para
+            entregar mais controle e previsibilidade na oficina.
           </p>
           <div class="product-hero-actions">
             <a href="index.html?interesse=Ordem%20de%20Servi%C3%A7os#contato" class="button button-primary">
@@ -148,10 +148,10 @@
         <div class="container">
           <div class="product-detail-heading" data-reveal>
             <span class="section-kicker">Visão geral</span>
-            <h2 id="visao-geral-title">Cada OS com responsável, status e histórico</h2>
+            <h2 id="visao-geral-title">Da solicitação ao financeiro da OS</h2>
             <p>
-              Menos ligação perdida e mais previsibilidade de entrega — do
-              cadastro à conclusão do serviço.
+              Menos ligação perdida e mais previsibilidade — do orçamento à
+              agenda, com status, responsável e cobrança no mesmo fluxo.
             </p>
           </div>
 
@@ -159,19 +159,19 @@
             <ul class="product-feature-list">
               <li>
                 <i class="fa-solid fa-check" aria-hidden="true"></i>
-                Cadastro e triagem ágil de equipamentos
+                Painel com faturamento, pipeline e atrasos
               </li>
               <li>
                 <i class="fa-solid fa-check" aria-hidden="true"></i>
-                Histórico técnico unificado por OS
+                Orçamento do cliente até virar OS
               </li>
               <li>
                 <i class="fa-solid fa-check" aria-hidden="true"></i>
-                Indicadores de produtividade da equipe
+                Agenda diária com veículo e responsável
               </li>
               <li>
                 <i class="fa-solid fa-check" aria-hidden="true"></i>
-                Etapas e responsáveis claros em cada atendimento
+                Financeiro de a receber, atrasos e recebidos
               </li>
             </ul>
 
@@ -205,27 +205,132 @@
       <section class="product-detail-section" id="telas" aria-labelledby="telas-title">
         <div class="container">
           <div class="product-detail-heading" data-reveal>
-            <span class="section-kicker">Painel</span>
-            <h2 id="telas-title">Visão do status das ordens em um só lugar</h2>
+            <span class="section-kicker">Telas reais</span>
+            <h2 id="telas-title">Painel, OS, orçamentos, agenda e financeiro</h2>
             <p>
-              Acompanhe o andamento das OS com indicadores e estados claros
-              para priorizar o que precisa de atenção.
+              Telas reais da operação: indicadores da oficina, lista de ordens,
+              central de orçamentos, agenda diária e recebíveis.
             </p>
           </div>
 
           <div class="product-screens-panel" data-reveal>
-            <div class="product-media image-fallback" data-label="Ordem de Serviços">
-              <picture>
-                <source srcset="assets/images/dashboard-de-ordem-servicos.webp" type="image/webp" />
-                <img
-                  src="assets/images/dashboard-de-ordem-servicos.png"
-                  alt="Painel do sistema de Ordem de Serviços"
-                  width="960"
-                  height="540"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </picture>
+            <div class="product-gallery" data-product-gallery>
+              <div class="product-media image-fallback" data-label="Ordem de Serviços">
+                <picture>
+                  <source
+                    data-gallery-webp
+                    srcset="assets/images/dashboard-de-ordem-servicos.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    data-gallery-img
+                    src="assets/images/dashboard-de-ordem-servicos.png"
+                    alt="Painel do sistema de Ordem de Serviços"
+                    width="960"
+                    height="540"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <div class="gallery-tabs" role="tablist" aria-label="Telas da Ordem de Serviços">
+                <button
+                  type="button"
+                  class="is-active"
+                  role="tab"
+                  aria-selected="true"
+                  data-webp="assets/images/dashboard-de-ordem-servicos.webp"
+                  data-src="assets/images/dashboard-de-ordem-servicos.png"
+                  data-alt="Painel do sistema de Ordem de Serviços"
+                >
+                  Painel
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  data-webp="assets/images/os-ordens.webp"
+                  data-src="assets/images/os-ordens.png"
+                  data-alt="Lista de ordens de serviço"
+                >
+                  OS
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  data-webp="assets/images/os-orcamentos.webp"
+                  data-src="assets/images/os-orcamentos.png"
+                  data-alt="Central de orçamentos da oficina"
+                >
+                  Orçamentos
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  data-webp="assets/images/os-agenda.webp"
+                  data-src="assets/images/os-agenda.png"
+                  data-alt="Agenda da oficina"
+                >
+                  Agenda
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  data-webp="assets/images/os-financeiro.webp"
+                  data-src="assets/images/os-financeiro.png"
+                  data-alt="Financeiro e recebíveis da oficina"
+                >
+                  Financeiro
+                </button>
+              </div>
+            </div>
+
+            <div class="product-screens-grid">
+              <figure>
+                <picture>
+                  <source srcset="assets/images/dashboard-de-ordem-servicos.webp" type="image/webp" />
+                  <img
+                    src="assets/images/dashboard-de-ordem-servicos.png"
+                    alt="Painel com indicadores da oficina"
+                    width="640"
+                    height="400"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <figcaption>Painel</figcaption>
+              </figure>
+              <figure>
+                <picture>
+                  <source srcset="assets/images/os-ordens.webp" type="image/webp" />
+                  <img
+                    src="assets/images/os-ordens.png"
+                    alt="Lista de ordens de serviço"
+                    width="640"
+                    height="400"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <figcaption>Ordens de serviço</figcaption>
+              </figure>
+              <figure>
+                <picture>
+                  <source srcset="assets/images/os-financeiro.webp" type="image/webp" />
+                  <img
+                    src="assets/images/os-financeiro.png"
+                    alt="Financeiro e recebíveis"
+                    width="640"
+                    height="400"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <figcaption>Financeiro</figcaption>
+              </figure>
             </div>
           </div>
         </div>
