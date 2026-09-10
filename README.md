@@ -47,6 +47,7 @@ Capturas reais em `assets/images/`:
 
 **Pedido Digital:** `cardapio-mesas`, `cardapio-pedidos`, `cardapio-entregadores`  
 **Reobote PDV:** `tela-pdv`, `monitor-venda`, `desempenho-venda-diaria`  
+**Ordem de Serviços:** `dashboard-de-ordem-servicos`, `os-ordens`, `os-orcamentos`, `os-agenda`, `os-financeiro`  
 **RRS Gabarito:** `gabarito-painel`, `gabarito-estrutura`, `gabarito-resultados`, `gabarito-mobile`, `gabarito-scan`
 
 Cada produto tem galeria com abas no card e uma vitrine abaixo da seção de produtos.
