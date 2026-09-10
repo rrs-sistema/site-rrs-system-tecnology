@@ -6,7 +6,7 @@ Construído com **HTML, CSS e JavaScript**, com foco em identidade própria, res
 
 ## Principais funcionalidades
 
-- Apresentação dos produtos Reobote (PDV, Pedido Digital e Ordem de Serviços)
+- Apresentação dos produtos Reobote (PDV, Pedido Digital e Ordem de Serviços) e RRS Gabarito
 - Páginas de detalhe por produto, com solicitação de versão de teste (PDV e Pedido Digital)
 - Divulgação de desenvolvimento sob medida, integrações e consultoria
 - Formulário de contato com validação e suporte a Formspree
@@ -46,7 +46,8 @@ O botão de WhatsApp na seção de contato usa o número **(41) 99208-8544**:
 Capturas reais em `assets/images/`:
 
 **Pedido Digital:** `cardapio-mesas`, `cardapio-pedidos`, `cardapio-entregadores`  
-**Reobote PDV:** `tela-pdv`, `monitor-venda`, `desempenho-venda-diaria`
+**Reobote PDV:** `tela-pdv`, `monitor-venda`, `desempenho-venda-diaria`  
+**RRS Gabarito:** `gabarito-painel`, `gabarito-estrutura`, `gabarito-resultados`, `gabarito-mobile`, `gabarito-scan`
 
 Cada produto tem galeria com abas no card e uma vitrine abaixo da seção de produtos.
 
@@ -55,6 +56,7 @@ Cada produto tem galeria com abas no card e uma vitrine abaixo da seção de pro
 - `produto-reobote-pdv.html`
 - `produto-cardapio-digital.html`
 - `produto-ordem-de-servicos.html`
+- `produto-rrs-gabarito.html`
 
 ## Páginas legais
 
@@ -66,6 +68,7 @@ Cada produto tem galeria com abas no card e uma vitrine abaixo da seção de pro
 - `politica-reobote-pdv.html`
 - `politica-cardapio-digital.html`
 - `politica-ordem-servicos.html`
+- `politica-rrs-gabarito.html`
 - `exclusao-de-dados.html`
 
 PDV e Pedido Digital incluem uma seção para solicitar versão de teste. Quando os instaladores forem publicados em `assets/downloads/`, use estes nomes:
