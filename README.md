@@ -46,7 +46,7 @@ O botão de WhatsApp na seção de contato usa o número **(41) 99208-8544**:
 Capturas reais em `assets/images/`:
 
 **Pedido Digital:** `cardapio-mesas`, `cardapio-pedidos`, `cardapio-entregadores`  
-**Reobote PDV:** `tela-pdv`, `monitor-venda`, `desempenho-venda-diaria`  
+**Reobote PDV:** `tela-pdv`, `monitor-venda`, `desempenho-venda-diaria` (visão gerencial), `pdv-estoque`, `pdv-financeiro`, `pdv-resumo`  
 **Ordem de Serviços:** `dashboard-de-ordem-servicos`, `os-ordens`, `os-orcamentos`, `os-agenda`, `os-financeiro`  
 **RRS Gabarito:** `gabarito-painel`, `gabarito-estrutura`, `gabarito-resultados`, `gabarito-mobile`, `gabarito-scan`
 
