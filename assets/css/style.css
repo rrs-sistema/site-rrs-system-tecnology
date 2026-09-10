@@ -1997,7 +1997,8 @@ body.lightbox-open {
   background: var(--ink);
 }
 
-.footer-main {
+.footer-main,
+.footer-grid {
   display: grid;
   grid-template-columns: 1.55fr 0.8fr 0.9fr 0.9fr;
   gap: 54px;
@@ -2376,7 +2377,8 @@ body.lightbox-open {
     max-width: 760px;
   }
 
-  .footer-main {
+  .footer-main,
+  .footer-grid {
     grid-template-columns: 1.3fr repeat(2, 0.8fr);
   }
 
@@ -2508,7 +2510,8 @@ body.lightbox-open {
     gap: 0;
   }
 
-  .footer-main {
+  .footer-main,
+  .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 40px 26px;
   }
