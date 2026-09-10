@@ -659,7 +659,7 @@ ul {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
 }
 
@@ -693,6 +693,10 @@ ul {
 
 .product-os {
   --product: #1d4e89;
+}
+
+.product-gabarito {
+  --product: #0e7490;
 }
 
 .product-card-top {
@@ -884,6 +888,15 @@ ul {
   border: 1px solid var(--slate-200);
   border-radius: 14px;
   background: var(--ink);
+}
+
+.product-showcase-grid img.is-portrait {
+  aspect-ratio: 9 / 16;
+  max-height: 420px;
+  width: auto;
+  margin-inline: auto;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .product-showcase-grid figure {
@@ -1135,7 +1148,7 @@ body.lightbox-open {
 
 .audience-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
 }
 
@@ -2296,7 +2309,7 @@ body.lightbox-open {
   }
 
   .product-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .plans-grid {
@@ -2317,12 +2330,6 @@ body.lightbox-open {
   .cardapio-showcase-grid,
   .product-showcase-grid {
     grid-template-columns: 1fr;
-  }
-
-  .product-card:last-child {
-    grid-column: 1 / -1;
-    width: calc(50% - 9px);
-    justify-self: center;
   }
 
   .services-layout {
@@ -2460,11 +2467,6 @@ body.lightbox-open {
 
   .product-gallery {
     margin-inline: 20px;
-  }
-
-  .product-card:last-child {
-    grid-column: auto;
-    width: 100%;
   }
 
   .service-grid {

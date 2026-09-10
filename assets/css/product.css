@@ -21,6 +21,13 @@ body.product-page.product-theme-os {
     var(--slate-50);
 }
 
+body.product-page.product-theme-gabarito {
+  background:
+    radial-gradient(ellipse 70% 45% at 100% -8%, rgba(14, 116, 144, 0.12), transparent 55%),
+    radial-gradient(ellipse 50% 35% at 0% 20%, rgba(28, 51, 68, 0.05), transparent 50%),
+    var(--slate-50);
+}
+
 .product-page {
   --product: var(--brand);
 }
@@ -35,6 +42,10 @@ body.product-page.product-theme-os {
 
 .product-theme-os {
   --product: #1d4e89;
+}
+
+.product-theme-gabarito {
+  --product: #0e7490;
 }
 
 /* Hero */
