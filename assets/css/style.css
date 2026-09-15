@@ -699,6 +699,10 @@ ul {
   --product: #0e7490;
 }
 
+.product-festa {
+  --product: #7a2f8f;
+}
+
 .product-card-top {
   display: flex;
   align-items: center;
@@ -897,6 +901,13 @@ ul {
   margin-inline: auto;
   object-fit: cover;
   object-position: top center;
+}
+
+.product-gallery .product-media img.is-portrait {
+  object-fit: contain;
+  object-position: center top;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--product) 10%, white), var(--slate-50));
 }
 
 .product-showcase-grid figure {

@@ -6,7 +6,7 @@ Construído com **HTML, CSS e JavaScript**, com foco em identidade própria, res
 
 ## Principais funcionalidades
 
-- Apresentação dos produtos Reobote (PDV, Pedido Digital e Ordem de Serviços) e RRS Gabarito
+- Apresentação dos produtos Reobote (PDV, Pedido Digital e Ordem de Serviços), RRS Gabarito e Faça a Festa
 - Páginas de detalhe por produto, com solicitação de versão de teste (PDV e Pedido Digital)
 - Divulgação de desenvolvimento sob medida, integrações e consultoria
 - Formulário de contato com validação e suporte a Formspree
@@ -48,7 +48,8 @@ Capturas reais em `assets/images/`:
 **Pedido Digital:** `cardapio-mesas`, `cardapio-pedidos`, `cardapio-entregadores`  
 **Reobote PDV:** `tela-pdv`, `monitor-venda`, `desempenho-venda-diaria` (visão gerencial), `pdv-estoque`, `pdv-financeiro`, `pdv-resumo`  
 **Ordem de Serviços:** `dashboard-de-ordem-servicos`, `os-ordens`, `os-orcamentos`, `os-agenda`, `os-financeiro`  
-**RRS Gabarito:** `gabarito-painel`, `gabarito-estrutura`, `gabarito-resultados`, `gabarito-mobile`, `gabarito-scan`
+**RRS Gabarito:** `gabarito-painel`, `gabarito-estrutura`, `gabarito-resultados`, `gabarito-mobile`, `gabarito-scan`  
+**Faça a Festa:** `festa-persona`, `festa-dashboard`, `festa-convites`, `festa-status`, `festa-tarefas`, `festa-orcamento`, `festa-calculadora`, `festa-convidado`
 
 Cada produto tem galeria com abas no card e uma vitrine abaixo da seção de produtos.
 
@@ -58,6 +59,7 @@ Cada produto tem galeria com abas no card e uma vitrine abaixo da seção de pro
 - `produto-cardapio-digital.html`
 - `produto-ordem-de-servicos.html`
 - `produto-rrs-gabarito.html`
+- `produto-faca-a-festa.html`
 
 ## Páginas legais
 
@@ -70,6 +72,7 @@ Cada produto tem galeria com abas no card e uma vitrine abaixo da seção de pro
 - `politica-cardapio-digital.html`
 - `politica-ordem-servicos.html`
 - `politica-rrs-gabarito.html`
+- `politica-faca-a-festa.html`
 - `exclusao-de-dados.html`
 
 PDV e Pedido Digital incluem uma seção para solicitar versão de teste. Quando os instaladores forem publicados em `assets/downloads/`, use estes nomes:
