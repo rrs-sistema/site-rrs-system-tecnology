@@ -320,11 +320,13 @@
           const src = tab.getAttribute("data-src");
           const webpSrc = tab.getAttribute("data-webp");
           const alt = tab.getAttribute("data-alt");
+          const portrait = tab.getAttribute("data-portrait") === "true";
           if (!src) return;
 
           if (webp && webpSrc) webp.setAttribute("srcset", webpSrc);
           image.setAttribute("src", src);
           if (alt) image.setAttribute("alt", alt);
+          image.classList.toggle("is-portrait", portrait);
 
           tabs.forEach((item) => {
             const active = item === tab;
